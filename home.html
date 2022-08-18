@@ -1,0 +1,1856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop.com</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="sidebar.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        *{
+            padding:0%;
+            margin:0%;
+        }
+        #sub-header{
+            height:30px;
+            width:100%;
+            /* border:1px solid; */
+            display: flex;
+            justify-content: space-between;
+            font-size: .8125rem;
+            background: #f0f1f7;
+            
+            
+        }
+        .div1>div>img{
+            height: 12px;
+            width: 12px;
+            margin-top: 3px;
+        }
+        .div1>div{
+            display: flex;
+            width: 400px;
+            /* border: 1px solid; */
+            justify-content: space-evenly;
+            margin-right: 10px;
+
+        }
+        #sub-header div{
+            margin-top: 3px;
+        }
+        #sub-header div{
+            color: #202340;
+        }
+        #sub-header>div>p{
+            margin-left: 10px;
+            margin-top: 3px;
+        }
+        .div1>div>b>u{
+            color: #202340;
+        }
+        .div1>div>b>u:hover{
+            color: #09b8db;
+            cursor: pointer;
+        }
+
+        /* ------------Box no.-2----------- */
+        #sub-header2{
+            height: 80px;
+            width:100%;
+            /* border: 1px solid; */
+            display: flex;
+            justify-content: center;
+        
+        }
+        #sub-header2-1{
+            height: 55%;
+            width:22%;
+            display: flex;
+            /* border: 1px solid; */
+            justify-content: space-between;
+            margin-top: 3px;
+        }
+        /* #sub-header2-1>div{
+            border: 1px solid;
+        } */
+        .pic{
+            /* border: 1px solid; */
+            width: 30px;
+            height: auto;
+        }
+        .pic>img{
+            width:100% ;
+            margin: 4px;
+        }
+        #sub-header2-1>div:nth-child(4){
+           width: 20%
+        }
+        #sub-header2-1>div:nth-child(4)>p{
+            margin-top: 22%;
+            font-size: 11px;
+            font-weight: bold;
+            color: #545871 ;
+        }
+        #sub-header2-1>div:nth-child(2){ 
+           width: 19%;
+        }
+        #sub-header2-1>div:nth-child(2)>p{
+            margin-top: 22%;
+            font-size: 11px;
+            color: #545871 ;
+        }
+        #sub-header2-1>div:nth-child(1){ 
+           width: 42%;
+        }
+        #sub-header2-1>div:nth-child(1)>p{
+           font-size: 22px;
+           color: #545871 ;
+           margin-top: 5%;
+        }
+        .sub-header2-2{
+            /* border: 1px solid; */
+            margin-left: 1%;
+            width: 9%;
+            
+
+        }
+        .sub-header2-2>button{
+            margin-left: 5%;
+           font-size: large;
+           /* display: flex; */
+           margin-top: 3%;
+           padding: 5% 4% 5% 4%;
+           background: white;
+           color:#202340;
+           border: 0.5px solid black;   
+        
+        }
+        .sub-header2-2>button:hover{
+            background-color: #202340;
+            color: white;
+            cursor: pointer;
+            border: 0px;
+        }
+        /* -----------box-2 end------------ */
+
+        #big-photo-div{
+            width: 100%;
+            height: 315px;
+            /* border: 1px solid; */
+        }
+        #big-photo-div>img{
+            width: 100%;
+            height: 92%;
+        }
+        #grid-1{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 400px;
+            /* border: 1px solid; */
+            gap: 0px;
+            background-color: #F0F1F7;
+        }
+        #grid-1 div{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            height: 94%;
+            margin: 3% 3% 0% 3%;
+            background-color: white;
+        }
+        #grid-1>div p{
+            font-size: 19.2px;
+            margin-left: 3.5%;
+            margin-top: 8px;
+        }
+        #grid-1>div img{
+            width: 93%;
+            margin-left: 3.5%;
+            margin-top: 20px;
+        }
+        #grid-1>div:nth-child(3) div{
+            height: 50px;
+            background-color: #F0F1F7;
+            margin-top: 20px;
+        }
+        #grid-1>div:nth-child(3) div img{
+            height: 52%;
+            width: 50%;
+            margin: 10px 0px 0px 25%;
+        }
+        #grid-1>div img+p{
+            margin-top: 0px;
+            font-size:small;
+        }
+        #grid-1>div img+p:hover{
+            color:rgb(59, 154, 192);
+            cursor: pointer;
+        }
+        #grid-1>div:nth-child(3)>p+div+div+div+div+p{
+            margin-top: 11.5%;
+            font-size:small;
+        }
+        #grid-1>div:nth-child(3)>p+div+div+div+div+p:hover{
+            color:rgb(59, 154, 192);
+            cursor: pointer;
+        }
+        #chota-grid{
+            background-color: #F0F1F7;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(1,300px) ;
+        }
+        #chota-grid>div{
+            width: 99.5%;
+            margin:0px 0px 0px 0px;
+            height: 28%;
+        }
+        #chota-grid>div+img{
+            margin-top: -65%;
+        }
+        #chota-grid>div>p+button{
+            display: flex;
+            margin: auto;
+            padding: 3% 35% 3% 35% ;
+            margin-top: 8px;
+            border-radius: 50px;
+            border: 0px;
+            color: white;
+            background-color:#414467;
+            font-size: large;
+        }
+        #chota-grid>div>p+button:hover{
+            background-color: #090b30;
+        }
+        #chota-grid>div>p{
+            text-align: center;
+        }
+        #grid-1>div:nth-child(4){
+            background-color: #F0F1F7;
+            box-shadow: 0px;
+        }
+        #grid-2{
+            width: 100%;
+            /* border: 1px solid; */
+            height: 550px;
+            display: flex;
+        }
+        .bigImg{
+            width: 31%;
+            /* border: 1px solid; */
+            height: 400px;
+            margin-top: 5%;
+    
+
+        }
+        .bigImg>img{
+            width: 100%;
+            height: 100%;
+        }
+        .grid-2-1{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,271px);
+            width: 65%;
+            gap: 1.5% ;
+            margin: 0% 0% 0% 2.5%;
+           
+        }
+        /* .grid-2-1 div{
+            border: 1px solid;
+        } */
+        .grid-2-1 div img{
+            width: 100%;
+            margin-top: 20px;
+            box-shadow: 0 0 5px #9597a6;
+        }
+
+        .grid-2-1 div div{
+            width: 100;
+        }
+        .div-2{
+            width: 55%;
+            height: 25px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 12px;
+
+        }
+        .div-2>div:nth-child(1){
+            width: 20%;
+            height: 100%;
+            /* border: 1px solid; */
+        }
+
+        /* ---------------------- */
+        .div-2-1{
+            width: 70%;
+            height: 25px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 12px;
+
+        }
+        .div-2-1>div:nth-child(1){
+            width: 40%;
+            height: 100%;
+
+        }
+        .div-2-1>div:nth-child(2){
+            width: 10%;
+            height: 100%;
+            
+        }
+        .div-2-1>div:nth-child(2)>img{
+            width: 100%;
+            margin-top:-2px;
+            
+        }
+        .div-2-1>div:nth-child(3){
+            width: 50%;
+            height: 100%;
+            
+        }
+           /* ---------------------- */
+
+
+        .div-2>div:nth-child(2){
+            width: 10%;
+            height: 100%;
+            /* border: 1px solid; */
+        }
+        .div-2>div:nth-child(2)>img{
+            width: 100%;
+            margin-top:-2px;
+        }
+        .div-2>div:nth-child(3){
+            width: 50%;
+            height: 100%;
+            /* border: 1px solid; */
+        }
+        #except{
+            width: 65%;
+            height: 25px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 4px;
+        }
+        #except>div:nth-child(1){
+            width: 35%;
+            height: 100%;
+            /* border: 1px solid; */
+        }
+
+        #except>div:nth-child(2){
+            width: 10%;
+            height: 100%;
+            /* border: 1px solid; */
+        }
+        #except>div:nth-child(2)>img{
+            width: 100%;
+            margin-top:-2px;
+        }
+        #except>div:nth-child(3){
+            width: 50%;
+            height: 100%;
+            /* border: 1px solid; */
+        }
+        #galti-1{
+            width: 100%;
+            height: 170px;
+            border: 1px solid #F0F1F7;
+            background-color: #F0F1F7;
+        }
+        #upper-div{
+            width: 97%;
+            height: 150px;
+            border: 1px solid #F0F1F7;
+            margin: auto;
+            margin-top: 1.5%;
+            background-color: white;
+        }
+        #upper-div>p{
+            font-size: 38px;
+            color: #2e2c38;
+            margin-left: 5px;
+            margin-top: 7.5%;
+        }
+        #galti-2{
+            width: 100%;
+            height: 450px;
+            /* border: 1px solid; */
+            background-color: #F0F1F7;
+        }
+        #grid-3{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(1,440px);
+            gap: 4px;
+            margin:0px 19px 0px 19px;
+            background-color: white;
+            
+        }
+        #grid-3 div:nth-child(1){
+            /* border: 1px solid; */
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+        #grid-3>div:nth-child(1)>img{
+            width: 100%;
+            height: 60%;
+        }
+        #grid-3>div:nth-child(2)>img{
+            width: 100%;
+            height: 60%;
+        }
+        #grid-3>div:nth-child(3)>img{
+            width: 100%;
+            height: 60%;
+        }
+        #grid-3>div:nth-child(4)>img{
+            width: 100%;
+            height: 60%;
+        }
+        .same-hover{
+            margin-left: 10px;
+            color: #2e2c38;
+        }
+        .same-hover:hover{
+            color: #09b8db;
+        }
+        .dollar{
+            color: #202340;
+            margin: 10px 0px 0px 10px;
+        }
+        .div-3{
+            width: 47%;
+            height: 18px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+        .div-3>div:nth-child(1)>p{
+            font-size:12px ;
+            color: #202340;
+        }
+        .div-3>div:nth-child(2)>img{
+            width: 100%;
+            margin-top:-2px;
+        }
+        .div-3>div:nth-child(2){
+            width: 10%;
+            height: 100%;
+        }
+        .star-div{
+            display: flex;
+            width: 33%;
+            height: 18px;
+            margin-left: 10px;
+
+        }
+        .star-div>div{
+            display: flex;
+        }
+        .star-div>div img{
+            width: 100%;
+            height: 100%;
+        }
+        .star-div>div+div>p{
+            margin-top: 2px;
+        }
+        .same-hover-2{
+            margin-left: 10px;
+            margin-top: 5px;
+            color: #007e97;
+        }
+        .same-hover-2:hover{
+            color: #09b8db;
+        }
+        .haha{
+            width: 100%;
+            height: 15px;
+            /* border: 1px solid; */
+            background-color: #F0F1F7;
+        }
+        #galti-4{
+            width: 100%;
+            height: 320px;
+            /* border: 1px solid; */
+            background-color: #F0F1F7;
+        }
+        .grid-4{
+            width: 97%;
+            height: 100% ;
+            /* border: 1px solid; */
+            margin: auto;
+            background-color: white;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(1,320px);
+            gap: 5px;
+
+        }
+        .grid-4>div{
+            /* border: 1px solid; */
+            margin: 10px;
+        }
+        .grid-4>div:nth-child(1)>img{
+            width: 100%;
+            height: 80%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .grid-4>div:nth-child(2)>img{
+            width: 100%;
+            height: 80%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .grid-4>div:nth-child(3)>img{
+            width: 100%;
+            height: 80%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .grid-4>div:nth-child(4)>img{
+            width: 100%;
+            height: 80%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .div-2-modified{
+            width: 55%;
+            height: 25px;
+            margin: auto;
+            display: flex;
+            /* justify-content: space-between; */
+            margin-top: 12px;
+
+        }
+        .div-2-modified>div:nth-child(1)>p{
+            font-size: 16px;
+            color: #202340;
+        }
+        .div-2-modified>div:nth-child(2){
+            height: 100%;
+            width: 20px;
+            /* border: 1px solid; */
+            margin-left: 8px;
+        }
+        .div-2-modified>div:nth-child(2)>img{
+            margin-top: 2px;
+            height: 14px;
+        }
+        .div-2-modified>div:nth-child(3)>p{
+            font-size: 16px;
+            color: #202340;
+        }
+        #capsule{
+            width: 100%;
+            height: 65px;
+            /* border: 1px solid; */
+            background-color: #F0F1F7;
+        }
+        #capsule>div{
+            width: 97%;
+            height: 65px;
+            /* border: 1px solid; */
+            margin: auto;
+            background-color: white;
+        }
+        #capsule>div>p{
+            font-size: 38px;
+            color: #2e2c38;
+            margin-left: 20px;
+            padding-top: 8px;
+        }
+        #capsule-2{
+            width: 100%;
+            height: 440px;
+            /* border: 1px solid; */
+            background-color: #F0F1F7;
+        }
+        #chota-capsule{
+            width: 97%;
+            height: 100%;
+            /* border: 1px solid; */
+            margin: auto;
+            background-color: white;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(1,440px);
+        }
+        #chota-capsule>div{
+            /* border: 1px solid; */
+            margin: 2px 0px 10px 8px;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        }
+        #chota-capsule>div:nth-child(1){
+            box-shadow: none;
+        }
+        #chota-capsule>div:nth-child(1)>img{
+            width: 100%;
+            height: 90%;
+        }
+        #chota-capsule>div:nth-child(2)>img{
+            width: 70%;
+            height: 60%;
+            /* border: 1px solid; */
+            margin: 0% 0% 0% 15%;
+            
+        }
+        #chota-capsule>div:nth-child(3)>img{
+            width: 70%;
+            height: 60%;
+            /* border: 1px solid; */
+            margin: 0% 0% 0% 15%;
+        }
+        .phoenix{
+            margin-left: 10px;
+        }
+        .phoenix>img+p{
+            color: #2e2c38;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .phoenix>img+p:hover{
+            color: #0bb1d3;
+            cursor: pointer;
+        }
+        .phoenix>img+p+p{
+            color:#202340;
+            font-size: 14px;
+        }
+        .chain-div{
+            height: 18px;
+            width: 38%;
+            /* border: 1px solid; */
+            display: flex;
+            margin-top: 5px;
+            margin-left: 0px;
+            justify-content: space-between;
+        }
+        .chain-div>div:nth-child(1){
+            height: 100%;
+            width: 46%;
+            /* border: 1px solid; */
+        }
+        .chain-div>div:nth-child(1)>p{
+            font-size: 12px;
+            color: #202340;
+        }
+        .chain-div>div:nth-child(2){
+            height: 100%;
+            width: 8%;
+            /* border: 1px solid; */
+            margin-left: 3px;
+            margin-right: 3px;
+        }
+        .chain-div>div:nth-child(2)>img{
+            height: 100%;
+            width: 100%;
+        }
+        .chain-div>div:nth-child(3){
+            height: 100%;
+            width: 36%;
+            /* border: 1px solid; */
+        }
+        .chain-div>div:nth-child(3)>p{
+            font-size: 12px;
+            color: #202340;
+        }
+        .chain-div+p{
+            margin-top: 5px;
+            color: #007E97;
+            font-size: 14px;
+        }
+        .chain-div+p:hover{
+            color: #0bb1d3;
+            cursor: pointer;
+        }
+        .caps{
+            width: 100%;
+            height: 65px;
+            /* border: 1px solid; */
+            background-color: #F0F1F7;
+        }
+        .caps>div{
+            width: 97%;
+            height: 65px;
+            /* border: 1px solid; */
+            margin: auto;
+            background-color: white;
+        }
+        .caps>div>p{
+            font-size: 38px;
+            color: #2e2c38;
+            text-align: center;
+            padding-top: 10px;
+        }
+        .circle-div{
+            width: 100%;
+            height: 570px;
+            /* border: 1px solid; */
+            background-color: #F0F1F7;
+        }
+        .circle-div>div{
+            width: 97%;
+            height: 570px;
+            /* border: 1px solid; */
+            background-color: white ;
+            margin: auto;
+        }
+        .circle-div-2{
+            width: 90%;
+            height: 570px;
+            /* border: 1px solid; */
+            margin: auto;
+            background-color: white;
+            display: grid;
+            grid-template-columns: repeat(6,1fr) ;
+            grid-template-rows: repeat(2,280px) ;
+
+        }
+        .circle-div-2 div{
+            /* border: 1px solid; */
+            margin: 13px;
+
+        }
+        .circle-div-2 div img{
+            width:90%;
+            height: 60%;
+            margin-top: 10%;
+            border: 10px solid lightgray;
+            border-radius: 50%;
+            
+        }
+        .circle-div-2 div p{
+            color: #202340;
+            /* margin-left: 18%; */
+            margin-top: 13px;
+            font-size: 16px;
+            font-weight: bolder;
+            text-align: center;
+        }
+        #you{
+            width: 100%;
+            height: 320px;
+            /* border: 1px solid; */
+            background-color: #F0F1F7;
+        }
+        .me{
+            width: 97%;
+            height: 100% ;
+            /* border: 1px solid; */
+            margin: auto;
+            background-color: white;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(1,320px);
+            
+
+        }
+        
+        .me>div{
+            /* border: 1px solid; */
+            margin: 3% 15% 3% 15%;
+        }
+        .me>div:nth-child(1)>img{
+            width: 100%;
+            height: 80%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .me>div:nth-child(2)>img{
+            width: 100%;
+            height: 80%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .me>div:nth-child(3)>img{
+            width: 100%;
+            height: 80%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .div-2-modi{
+            width: 55%;
+            height: 25px;
+            margin: auto;
+            display: flex;
+            /* justify-content: space-between; */
+            margin-top: 12px;
+
+        }
+        .div-2-modi>div:nth-child(1)>p{
+            font-size: 17px;
+            color: #202340;
+        }
+        .div-2-modi>div:nth-child(2){
+            height: 100%;
+            width: 20px;
+            /* border: 1px solid; */
+            margin-left: 8px;
+        }
+        .div-2-modi>div:nth-child(2)>img{
+            margin-top: 2px;
+            height: 14px;
+        }
+        .div-2-modi>div:nth-child(3)>p{
+            font-size: 17px;
+            color: #202340;
+        }
+        .border2{
+            width: 93%;
+            height:70px;
+            border: 1px solid;
+            margin: auto;
+        }
+        #capsules{
+            width: 100%;
+            height: 65px;
+            /* border: 1px solid; */
+            background-color: #F0F1F7;
+        }
+        #capsules>div{
+            width: 97%;
+            height: 65px;
+            /* border: 1px solid; */
+            margin: auto;
+            background-color: white;
+        }
+        #capsules>div>p{
+            font-size: 30px;
+            color: #2e2c38;
+            text-align: center;
+            padding-top: 8px;
+        }
+        #grid-3-1{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(1,340px);
+            /* gap: 4px; */
+            margin:0px 19px 0px 19px;
+            background-color: white;
+            
+        }
+        #grid-3 div{
+            /* border: 1px solid; */
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+        #grid-3-1>div:nth-child(1)>img{
+            width: 100%;
+            height: 70%;
+            margin-top: 4%;
+        }
+        #grid-3-1>div:nth-child(2)>img{
+            width: 100%;
+            height: 70%;
+            margin-top: 4%;
+        }
+        #grid-3-1>div:nth-child(3)>img{
+            width: 100%;
+            height: 70%;
+            margin-top: 4%;
+        }
+        #grid-3-1>div:nth-child(4)>img{
+            width: 100%;
+            height: 70%;
+            margin-top: 4%;
+        }
+        #grid-3-1>div:nth-child(5)>img{
+            width: 100%;
+            height: 60%;
+            margin-top: 4%;
+        }
+        #grid-3-1>div:nth-child(1)>p{
+            text-align: center;
+            font-size: medium;
+            margin-top: 2%;
+            font-weight: bold;
+        }
+        #grid-3-1>div:nth-child(2)>p{
+            text-align: center;
+            font-size: medium;
+            margin-top: 2%;
+            font-weight: bold;
+        }
+        #grid-3-1>div:nth-child(3)>p{
+            text-align: center;
+            font-size: medium;
+            margin-top: 2%;
+            font-weight: bold;
+        }
+        #grid-3-1>div:nth-child(4)>p{
+            text-align: center;
+            font-size: medium;
+            margin-top: 2%;
+            font-weight: bold;
+        }
+        #grid-3-1>div:nth-child(5)>p{
+            text-align: center;
+            font-size: medium;
+            margin-top: 2%;
+            font-weight: bold;
+        }
+       
+        
+
+        
+
+        
+    </style>
+</head>
+<body>
+            <!-- NAVBAR -->
+            <header>
+                <div class="btn">
+                  <span class="fas fa-bars"></span>
+                  <i class="fas fa-circle-s"></i>
+                </div>
+            
+                <nav class="sidebar">
+                  <div class="logo-img">
+                    <img src="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg">
+                    <h1>SHOP.COM</h1>
+                  </div>
+              
+                  <ul class="myaccount">
+                    
+                    <li><a href="#">Account</a></li>
+                    <li>
+                      
+                      <img src="https://img.shop.com/Image/resources/images/icon-sign-in-24px.svg">
+                      <a href="signin.html">Sign In</a>
+                    </li>
+                    <li><img src="https://img.shop.com/Image/resources/images/icon-track-orders-24px.svg">
+                      <a href="#">Track Orders</a>
+                    </li>
+                    <li><img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg">
+                      <a href="#">Reorder Items</a>
+                    </li>
+                    <li><img src="https://img.shop.com/Image/resources/images/icon-help-outline-24px.svg">
+                      <a href="#">Help</a>
+                    </li>
+                    <li><img src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg">
+                      <a href="#">My Account</a>
+                    </li>
+                  
+                  </ul>
+                  <ul class="ulcat">
+                    
+              
+              <li><a href="clothes.html">Clothes    </a></li>  
+              <li><a href="shoes.html">Shoes      </a></li>
+              <li><a href="#">Beauty    </a></li>  
+              <li><a href="#">Home      </a></li>
+              <li><a href="#">Electronics     </a></li> 
+              <li><a href="#">Health & Nutrition     </a></li> 
+              <li><a href="#">Jewelry      </a></li>
+              <li><a href="#">Kids      </a></li>
+              <li><a href="#">Pet Supplies      </a></li>
+              <li><a href="#">Food & Drink      </a></li>
+              <li><a href="#">Sports     </a></li> 
+              <li><a href="#">Travel     </a></li> 
+              <li><a href="#">SHOP Travel</a></li>
+              <li><a href="#">All Stores</a></li>
+              <li><a href="#">Exclusive Brandschevron </a></li>
+              <li><a href="#">All Departments</a></li>
+                  </ul>
+                
+                </nav>
+                <div class="outercontainer">
+                  <a class="bannertext">Shopping made easy. Buy now, pay later with Sezzle <span class="bannertext bannertextlink bannertextoverride">See details</span></a>
+              </div>
+              <div class="maincontainer">
+                <div id="first">
+                 <div  class="headerlogodesktop"> <a href="home.html"><img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="SHOP.COM"></a> </div>
+                </div>
+                <div  id="second">
+                    <div class="search">
+                      <div>
+                        <div class="ccol">
+                          <select name="" id="sea2">
+                            <option value="">All Departments</option>
+                            <option value="">Auto</option>
+                            <option value="">Baby</option>
+                            <option value="">Beauty</option>
+                            <option value="">Books</option>
+                            <option value="">Business</option>
+                            <option value="">Cameras</option>
+                            <option value="">Clothes</option>
+                            <option value="">Collectible</option>
+                            <option value="">Computers</option>
+                            <option value="">Craft</option>
+                            <option value="">Craft</option>
+                            <option value="">Electronics</option>
+                            <option value="">Food and Drink</option>
+                            <option value="">Electronics</option>
+                            <option value="">Garden</option>
+                          </select>
+                        </div>
+                        <div class="csea2"><input  id="sea" type="text" class="text" placeholder="Search SHOP.COM..."></div>
+                        <div id="csea3"><img src="https://img.shop.com/Image/resources/images/icon-search-24px.svg" alt=""></div>
+                      </div>
+                      <div id="img"><img src="https://img.shop.com/Image/header2013/motives-usa-can-100110-sculpting-concealer-banners-header1650486339409.svg" alt=""></div>
+                    </div>
+                    <div class="search1">
+                      <div class="links">
+                        <div><a href="Exclusive_brands.html">Exclusive Brands</a></div>
+                        <div><a href="stores.html">Store</a></div>
+                        <div><a href="deals.html">Deals</a></div>
+                        <div><a href="">SHOP Travels</a></div>
+                        <div><a href="">Departments</a></div>
+                        <div><a href="">Shopbuddy</a></div>
+                        <div><a href="shoplocal.html">SHOP Local</a></div>
+                      </div>
+                      <div class="sign">
+                        <div class="logo" id="signin"><div><img src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" alt=""></div><a href="signin.html"><div>Sign in</div></a></div>
+                        <div class="logo"><div><img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg" alt=""></div><a href=""><div>Orders</div></a></div>
+                        <div class="logo"><div><img src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg" alt=""></div><a href="cart.html"><div>Cart</div></a></div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            
+               </header>
+
+               <!-- <link rel="stylesheet" href="navbar.html"> -->
+
+            <!-- NAVBAR END -->
+
+    <!-- Sub HEader2 -->
+    <div id="sub-header">
+        <div><p>Your Shop Consultant is <b>SHOP.COM</b></p></div>
+        <div class="div1">
+            <div>
+                <p>Earn up to <b>50%</b></p>
+                <img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo" />
+                <p><b>Cashback</b> on eligible purchases.</p>
+                <b><u>Learn More</u></b>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------Box no.-2---------- -->
+
+    <div id="sub-header2">
+        <div id="sub-header2-1">
+            <div><p>$50,013,635</p></div>
+            <div><p>awarded in</p></div>
+            <div class="pic"><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo"></div>
+            <div><p>Cashback!</p></div>
+        </div>
+        <div class="sub-header2-2">
+            <button>Learn More</button>
+        </div>
+           
+    </div>
+         
+    </div>
+    <!-- ---------box 2 end---------- -->
+
+    <div id="big-photo-div">
+        <img src="https://img.shop.com/Image/homepage/usa-97541-mothers-day-banners-hero1651528563361.jpeg" alt="photo">
+    </div>
+    <div id="grid-1">
+        <div>
+            <p>Recently Viewed</p>
+            <img src="https://img.shop.com/Image/270000/273200/273200/products/1911623483.jpg?size=600x600" alt="photo">
+            <p><u>Browsing History</u></p>
+        </div>
+        <div>
+            <p>Dr. Deedra Mason's Essential 9</p>
+            <img src="https://img.shop.com/Image/homepage/us_eng_essential9_sq1616511735959.jpg" alt="photo">
+            <p><u>View the Essential 9</u></p>
+        </div>
+        <div>
+            <p>Featured One Cart Stores</p>
+            <div>
+                <img src="https://img.shop.com/Image/topbrands/nmlogos_134740.gif" alt="photo">
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/topbrands/nmlogos_136706.gif" alt="photo">
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/topbrands/nmlogos_138690.gif" alt="photo">
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/topbrands/nmlogos_131565.gif" alt="photo">
+            </div>
+            <p id="p"><u>See More Stores</u></p>
+        </div>
+        <div id="chota-grid">
+            <div>
+                <p>Sign in for the best experience</p>
+                <button>Sign In</button>
+            </div>
+            <img src="https://img.shop.com/Image/homepage/usa-97541-mothers-day-banners-media-min1651075549624.jpeg" alt="photo">
+        </div>
+    </div>
+
+    <div id="grid-2">
+        <div class="bigImg">
+            <img src="https://img.shop.com/Image/homepage/pure-collagen-us-eng-100016-signup-banners_600media1649175730514.jpg" alt="photo"/>
+        </div>
+        <div class="grid-2-1">
+            <div>
+                <img src="https://img.shop.com/Image/homepage/MA_Grad_mp-16867-media-hp-may221651073808785.jpg" alt="photo"/>
+                <div class="div-2">
+                    <div><p><b>9%</b></p></div>
+                    <div><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo"></div>
+                    <div><p><b>Cashback</b></p></div>
+                </div>
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/homepage/us-en-qvc-summerfashion-banner-mp16888-apr221651252245180.jpeg" alt="photo"/>
+                <div id="except">
+                    <div><p><strike>Was4%</strike></p></div>
+                    <div><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo"></div>
+                    <div><p><strike>Cashback</strike></p></div>
+                </div>
+
+                <div class="div-2-1">
+                    <div><p><b>Now7%</b></p></div>
+                    <div><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo"></div>
+                    <div><p><b>Cashback</b></p></div>
+                </div>
+
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/homepage/motives-usa-can-98330-moments-preorder-banners-media1649175657598.jpg" alt="photo"/>
+                <div class="div-2">
+                    <div><p><b>2%</b></p></div>
+                    <div><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo"></div>
+                    <div><p><b>Cashback</b></p></div>
+                </div>
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/homepage/shop-us-100695-maic2022-ticket-banners-media1650570969507.jpeg" alt="photo"/>
+                
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/homepage/us-en-fruitbouquets-fbmom20-banner-mp16870-apr221650559518542.png" alt="photo"/>
+                <div class="div-2">
+                    <div><p><b>3%</b></p></div>
+                    <div><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo"></div>
+                    <div><p><b>Cashback</b></p></div>
+                </div>
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/homepage/us-en-mymagiccarpet-shop30-hd-mp16894-may221651601953783.jpeg" alt="photo"/>
+                <div class="div-2">
+                    <div><p><b>5%</b></p></div>
+                    <div><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo"></div>
+                    <div><p></p><b>Cashback</b></div>
+                </div>
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/homepage/us-en-luckybrand-50off-banner-fillin-apr221651084892826.png" alt="photo"/>
+                <div class="div-2">
+                    <div><p><b>2%</b></p></div>
+                    <div><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo"></div>
+                    <div><p><b>Cashback</b></p></div>
+                </div>
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/homepage/us-en-5startgifts-mothersday-banner-cs100130-apr221650997407708.jpeg" alt="photo"/>
+                
+            </div>
+
+        </div>
+    </div>
+
+    <!-- -----------------logo-------------- -->
+
+
+    <!-- --------------------logo end---------------- -->
+
+    <div id="galti-1">
+        <div id="upper-div">
+            <p>Hot New Products</p>
+        </div>
+    </div>
+    <div id="galti-2">
+        <div id="grid-3">
+            <div>
+                <img src="https://img.shop.com/Image/240000/247900/247927/products/1925345712.jpg?size=300x300" alt="photo" />
+                <p class="same-hover">Shopping Annuity® Brand Premium Flushable Wipes - 150 Count</p>
+                <p class="dollar"><b>$7.49 </b></p>
+                <div class="div-3">
+                    <div><p>+ $0.15 / 2%</p></div>
+                    <div><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo"></div>
+                    <div><p>Cashback</p></div>
+                </div>
+                <div class="star-div">
+                    <div>
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                    </div>
+                    <div><p>(1)</p></div>
+                </div>
+                <p class="same-hover-2">Free shipping with $99 orders</p>
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/290000/291400/291472/products/1926928562.jpg?size=300x300" alt="photo" />
+                <p class="same-hover">GlutaQ</p>
+                <p class="dollar"><b>$49.95</b></p>
+                <div class="div-3">
+                    <div><p>+ $1.00 / 2%</p></div>
+                    <div><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo"></div>
+                    <div><p>Cashback</p></div>
+                </div>
+                <div class="star-div">
+                    <div>
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                    </div>
+                    <div><p>(1)</p></div>
+                </div>
+                <p class="same-hover-2">Free shipping with $99 orders</p>
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/290000/291400/291474/products/1926928560.jpg?size=300x300" alt="photo" />
+                <p class="same-hover">MycoAdapt</p>
+                <p class="dollar"><b>$49.95</b></p>
+                <div class="div-3">
+                    <div><p>+ $1.00 / 2%</p></div>
+                    <div><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo"></div>
+                    <div><p>Cashback</p></div>
+                </div>
+                <div class="star-div">
+                    <div>
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                    </div>
+                    <div><p>(8)</p></div>
+                </div>
+                <p class="same-hover-2">Free shipping with $99 orders</p>
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/240000/247900/247927/products/1925855947.jpg?size=300x300" alt="photo" />
+                <p class="same-hover">Shopping Annuity® Brand Premium Balance Belly Tea</p>
+                <p class="dollar"><b>$14.95</b></p>
+                <div class="div-3">
+                    <div><p>+$0.30 /2.01%</p></div>
+                    <div><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo"></div>
+                    <div><p>Cashback</p></div>
+                </div>
+                <div class="star-div">
+                    <div>
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                    </div>
+                    <div><p>(2)</p></div>
+                </div>
+                <p class="same-hover-2">Free shipping with $99 orders</p>
+            </div>
+        </div>
+    </div>
+    <div class="haha"></div>
+    <div id="galti-4">
+        <div class="grid-4">
+            <div>
+                <img src="https://img.shop.com/Image/homepage/ShopAnnuity-US-eng-97900-balance-tea-banner-media1645719715197.jpeg" alt="photo" />
+                <div class="div-2-modified">
+                    <div><p><b>2%</b></p></div>
+                    <div><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo"></div>
+                    <div><p><b>Cashback</b></p></div>
+                </div>
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/homepage/us-en-mycoadapt-banner-cs97902-mar221646762851555.jpeg" alt="photo" />
+                <div class="div-2-modified">
+                    <div><p><b>2%</b></p></div>
+                    <div><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo"></div>
+                    <div><p><b>Cashback</b></p></div>
+                </div>
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/homepage/us-en-glutaq-banner-cs97143-mar221646762684465.jpeg" alt="photo" />
+                <div class="div-2-modified">
+                    <div><p><b>2%</b></p></div>
+                    <div><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo"></div>
+                    <div><p><b>Cashback</b></p></div>
+                </div>
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/homepage/daily-green-usa-97146-banner-mar221646174610787.jpeg" alt="photo" />
+                <div class="div-2-modified">
+                    <div><p><b>2%</b></p></div>
+                    <div><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo"></div>
+                    <div><p><b>Cashback</b></p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="haha"></div>
+    <div id="capsule">
+        <div><p>Layered Custom Capsule Collection</p></div>
+    </div>
+    <div id="capsule-2">
+        <div id="chota-capsule">
+            <div>
+                <img src="https://img.shop.com/Image/homepage/layered-usa-eng-100693-spring-collection-banner-sq-min1651073323321.jpeg" alt="photo">
+            </div>
+            <div>
+                <div class="phoenix">
+                    <img src="https://img.shop.com/Image/280000/282000/282022/products/1932866513.jpg?size=300x300" alt="photo">
+                    <p>PHOENIX - 6 mm Rope Chain</p>
+                    <p><b>$79.95</b></p>
+                    <div class="chain-div">
+                        <div><p>+ $1.60 / 2%</p></div>
+                        <div>
+                            <img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo">
+                        </div>
+                        <div><p>Cashback</p></div> 
+                    </div>
+                    <p>Free shiping with $99 orders</p>
+                </div>
+            </div>
+            <div>
+                <div class="phoenix">
+                    <img src="https://img.shop.com/Image/280000/282000/282022/products/1932866535.jpg?size=300x300" alt="photo">
+                    <p>STORM - 8 mm Rope Chain</p>
+                    <p><b>$89.95</b></p>
+                    <div class="chain-div">
+                        <div><p>+ $1.80 / 2%</p></div>
+                        <div>
+                            <img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo">
+                        </div>
+                        <div><p>Cashback</p></div>
+                    </div>
+                    <p>Free shiping with $99 orders</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="haha"></div>
+    <div class="caps">
+        <div><p>Spring Essentials</p></div>
+    </div>
+    <div class="circle-div">
+        <div>
+            <div class="circle-div-2">
+                <div>
+                    <img src="https://img.shop.com/Image/240000/243400/243406/products/1920506725.jpg?size=400x400" alt="image" />
+                    <p>SPRING FASHION</p>
+                </div>
+                <div>
+                    <img src="https://img.shop.com/Image/240000/248600/248698/products/1863177034.jpg?size=750x750" alt="image" />
+                    <p>BEAUTY</p>
+                </div>
+                <div>
+                    <img src="https://img.shop.com/Image/240000/243400/243406/products/1905103847.jpg?size=400x400" alt="image" />
+                    <p>MEN`S GRAPHIC TEES</p>
+                </div>
+                <div>
+                    <img src="https://img.shop.com/Image/240000/243400/243406/products/1852617295.jpg?size=400x400" alt="image" />
+                    <p>MEN`S SHORTS</p>
+                </div>
+                <div>
+                    <img src="https://img.shop.com/Image/260000/266700/266794/products/1925100964.jpg?size=400x400" alt="image" />
+                    <p>WOMEN`S SANDALS</p>
+                </div>
+                <div>
+                    <img src="https://img.shop.com/Image/240000/243400/243406/products/1910174562.jpg?size=400x400" alt="image" />
+                    <p>MEN`S SANDALS</p>
+                </div>
+                <div>
+                    <img src="https://img.shop.com/Image/250000/251800/251872/products/1624113478.jpg?size=400x400" alt="image" />
+                    <p>ARTIFICIAL PLANTS</p>
+                </div>
+                <div>
+                    <img src="https://img.shop.com/Image/240000/243300/243390/products/559053520.jpg?size=750x750" alt="image" />
+                    <p>SPRING CLEANING</p>
+                </div>
+                <div>
+                    <img src="https://img.shop.com/Image/240000/243400/243406/products/1792343401.jpg?size=400x400" alt="image" />
+                    <p>DRAWER ORGANIZERS & TRAY</p>
+                </div>
+                <div>
+                    <img src="https://img.shop.com/Image/240000/243400/243406/products/1862227292.jpg?size=400x400" alt="image" />
+                    <p>PATIO FURNITURE</p>
+                </div>
+                <div>
+                    <img src="https://img.shop.com/Image/240000/243400/243406/products/1715279320.jpg?size=400x400" alt="image" />
+                    <p>BEDDING</p>
+                </div>
+                <div>
+                    <img src="https://img.shop.com/Image/240000/243400/243406/products/1917410008.jpg?size=400x400" alt="image" />
+                    <p> CANDELS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="haha"></div>
+    
+
+    <div id="you">
+        <div class="me">
+            <div>
+                <img src="https://img.shop.com/Image/homepage/prime_feminene_media1650979608459.jpg" alt="photo" />
+                <div class="div-2-modi">
+                    <div><p><b>2%</b></p></div>
+                    <div><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo"></div>
+                    <div><p><b>Cashback</b></p></div>
+                </div>
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/homepage/isotonix_sexual_health_media_module1650311690370.jpg" alt="photo" />
+                <div class="div-2-modi">
+                    <div><p><b>upto_2%</b></p></div>
+                    <div><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo"></div>
+                    <div><p><b>Cashback</b></p></div>
+                </div>
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/homepage/dna_opc3_media_module1650311757379.jpg" alt="photo" />
+                <div class="div-2-modi">
+                    <div><p><b>2%</b></p></div>
+                    <div><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo"></div>
+                    <div><p><b>Cashback</b></p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <!-- <div class="haha"></div> -->
+    <div class="haha"></div>
+    <div id="capsule">
+        <div><p>Best of Web Prices & Instant Cashback!</p></div>
+    </div>
+    <div id="capsule-2">
+        <div id="chota-capsule">
+            <div>
+                <img src="https://img.shop.com/Image/homepage/shop-usa-97717-best-of-web-600x600-img-min1643297975138.jpg" alt="photo">
+            </div>
+            
+            <div>
+                <div class="phoenix">
+                    <img src="https://img.shop.com/Image/280000/289000/289007/products/1927455508.jpg?size=300x300" alt="photo">
+                    <p>MKF Collection Bonita Tote Bag with Wallet by Mia K</p>
+                    <p><b>$48.99</b></p>
+                    <div class="chain-div">
+                        <div><p>+ $2.94 / 6%</p></div>
+                        <div>
+                            <img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo">
+                        </div>
+                        <div><p>Cashback</p></div> 
+                    </div>
+                    <p>Free shiping</p>
+                </div>
+            </div>
+            <div>
+                <div class="phoenix">
+                    <img src="https://img.shop.com/Image/280000/287800/287812/products/1931413939.jpg?size=300x300" alt="photo">
+                    <p>Zulay Kitchen Cold Brew Coffee Maker Shock-Resistant,Stainless Steel Mesh Filter and Non-Slip Silicone Base-1 Liter</p>
+                    <p><b>$39.99</b></p>
+                    <div class="chain-div">
+                        <div><p>+ $2.40 / 6%</p></div>
+                        <div>
+                            <img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo">
+                        </div>
+                        <div><p>Cashback</p></div>
+                    </div>
+                    <p>Free shiping</p>
+                </div>
+            </div>
+            
+        </div>
+       
+    </div>
+    
+    
+    <div class="haha"></div>
+    <div class="caps">
+        <div><p>Featured Categories</p></div>
+    </div>
+    <div class="circle-div">
+        <div>
+            <div class="circle-div-2">
+                <div>
+                    <img src="https://img.shop.com/Image/260000/266700/266794/products/1920629487.jpg?size=400x400" alt="image" />
+                    <p>WOMEN`S CLOTHING</p>
+                </div>
+                <div>
+                    <img src="https://img.shop.com/Image/240000/243400/243406/products/1871564145.jpg?size=400x400" alt="image" />
+                    <p>MEN`S CLOTHING</p>
+                </div>
+                <div>
+                    <img src="https://img.shop.com/Image/240000/248200/248295/products/1919935435.jpg?size=400x400" alt="image" />
+                    <p>GIRL`S CLOTHING</p>
+                </div>
+                <div>
+                    <img src="https://img.shop.com/Image/270000/274900/274929/products/1907370742.jpg?size=400x400" alt="image" />
+                    <p>BOY`S CLOTHING</p>
+                </div>
+                <div>
+                    <img src="https://img.shop.com/Image/270000/273200/273200/products/1899581989.jpg?size=400x400" alt="image" />
+                    <p>ACCESSORIES</p>
+                </div>
+                <div>
+                    <img src="https://img.shop.com/Image/240000/243400/243406/products/1922216435.jpg?size=400x400" alt="image" />
+                    <p>SHOES</p>
+                </div>
+                <div>
+                    <img src="https://img.shop.com/Image/240000/243400/243406/products/1715279320.jpg?size=400x400" alt="image" />
+                    <p>BEDDING</p>
+                </div>
+                <div>
+                    <img src="https://img.shop.com/Image/240000/243500/243545/products/1910446952.jpg?size=400x400" alt="image" />
+                    <p>KITCHEN & DINING</p>
+                </div>
+                <div>
+                    <img src="https://img.shop.com/Image/280000/281900/281909/products/1842390513.jpg?size=400x400" alt="image" />
+                    <p>ELECTRONICS</p>
+                </div>
+                <div>
+                    <img src="https://img.shop.com/Image/240000/243300/243380/products/1436234961.jpg?size=750x750" alt="image" />
+                    <p>BEAUTY</p>
+                </div>
+                <div>
+                    <img src="https://images.shop.com/pim/13009/image_j/OPC-3.JPG" alt="image" />
+                    <p>HEALTH & NUTRITION</p>
+                </div>
+                <div>
+                    <img src="https://img.shop.com/Image/250000/250100/250199/products/1787558026.jpg?size=750x750" alt="image" />
+                    <p>KIDS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="haha"></div>
+    <div id="galti-4">
+        <div class="grid-4">
+            <div>
+                <img src="https://img.shop.com/Image/homepage/us-en-ranchandhome-banner-mp16877-apr221650643723623.jpeg" alt="photo" />
+                <div class="div-2-modified">
+                    <div><p><b>8%</b></p></div>
+                    <div><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo"></div>
+                    <div><p><b>Cashback</b></p></div>
+                </div>
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/homepage/us-eng-zulay-mothersday-media-hp-may221650990670249.jpeg" alt="photo" />
+                <div class="div-2-modified">
+                    <div><p><b>6%</b></p></div>
+                    <div><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo"></div>
+                    <div><p><b>Cashback</b></p></div>
+                </div>
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/homepage/us-en-shoplocal-mothersday-banner-cs100420-apr221651264144361.jpeg" alt="photo" />
+                <div class="div-2-modified">
+                    <div><p><b>upto_15%</b></p></div>
+                    <div><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo"></div>
+                    <div><p><b>Cashback</b></p></div>
+                </div>
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/homepage/us-en-saharacase-freeshi-banner-mar221646758300059.jpeg" alt="photo" />
+                <div class="div-2-modified">
+                    <div><p><b>6%</b></p></div>
+                    <div><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo"></div>
+                    <div><p><b>Cashback</b></p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="haha"></div>
+    <div id="capsule">
+        <div><p>Stay Healthy with Essential 9!</p></div>
+    </div>
+    <div id="capsule-2">
+        <div id="chota-capsule">
+            <div>
+                <img src="https://img.shop.com/Image/homepage/us_eng_essential9_sq1616511735959.jpg" alt="photo">
+            </div>
+            
+            <div>
+                <div class="phoenix">
+                    <img src="https://img.shop.com/Image/210000/214100/214196/products/561800349.jpg?size=300x300" alt="photo">
+                    <p>Isotonix OPC-3®</p>
+                    <p><b>$31.95-$71.95</b></p>
+                    <div class="chain-div">
+                        <div><p>+upto$1.1/2%</p></div>
+                        <div>
+                            <img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo">
+                        </div>
+                        <div><p>Cashback</p></div> 
+                    </div>
+                    <p>Free shiping with $99 orders</p>
+                </div>
+            </div>
+            <div>
+                <div class="phoenix">
+                    <img src="https://img.shop.com/Image/210000/214100/214199/products/561800368.jpg?size=300x300" alt="photo">
+                    <p>Heart Health™ Essential Omega III Fish Oil with Vitamin E</p>
+                    <p><b>$36.95-$64.95</b></p>
+                    <div class="chain-div">
+                        <div><p>+upto$1.3/2%</p></div>
+                        <div>
+                            <img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo">
+                        </div>
+                        <div><p>Cashback</p></div>
+                    </div>
+                    <p>Free shiping with $99 orders</p>
+                </div>
+            </div>
+            
+        </div>
+       
+    </div>
+
+    <div id="galti-1">
+        <div class="haha"></div>
+    <div id="capsule">
+        <div><p>Cleaning & Health Have Never Been More Important</p></div>
+    </div>
+    <div id="galti-2">
+        <div id="grid-3">
+            <div>
+                <img src="https://img.shop.com/Image/210000/214100/214196/products/561800345.jpg?size=300x300" alt="photo" />
+                <p class="same-hover">Isotonix® Vitamin D with K2</p>
+                <p class="dollar"><b>$33.50-$79.95 </b></p>
+                <div class="div-3">
+                    <div><p>+upto$1.60/2%</p></div>
+                    <div><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo"></div>
+                    <div><p>Cashback</p></div>
+                </div>
+                <div class="star-div">
+                    <div><img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" /></div>
+                    <div><p>(98)</p></div>
+                </div>
+                <p class="same-hover-2">Free shipping with $99 orders</p>
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/250000/250100/250199/products/1332818472.jpg?size=300x300" alt="photo" />
+                <p class="same-hover">DNA Miracles Isotonix® Immune</p>
+                <p class="dollar"><b>$22.50</b></p>
+                <div class="div-3">
+                    <div><p>+ $0.45 / 2%</p></div>
+                    <div><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo"></div>
+                    <div><p>Cashback</p></div>
+                </div>
+                <div class="star-div">
+                    <div><img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" /></div>
+                    <div><p>(8)</p></div>
+                </div>
+                <p class="same-hover-2">Free shipping with $99 orders</p>
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/210000/214200/214267/products/559010729.jpg?size=300x300" alt="photo" />
+                <p class="same-hover">ClearShield® Maximum Protection and Hydration</p>
+                <p class="dollar"><b>$13.95-$23.95</b></p>
+                <div class="div-3">
+                    <div><p>+upto$0.48/2%</p></div>
+                    <div><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo"></div>
+                    <div><p>Cashback</p></div>
+                </div>
+                <div class="star-div">
+                    <div><img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" /></div>
+                    <div><p>(39)</p></div>
+                </div>
+                <p class="same-hover-2">Free shipping with $99 orders</p>
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/210000/214100/214196/products/561800360.jpg?size=300x300" alt="photo" />
+                <p class="same-hover">Isotonix® Vitamin C</p>
+                <p class="dollar"><b>$15.95-$34.50</b></p>
+                <div class="div-3">
+                    <div><p>+upto$0.69/2%</p></div>
+                    <div><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="logo"></div>
+                    <div><p>Cashback</p></div>
+                </div>
+                <div class="star-div">
+                    <div><img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="star logo" /></div>
+                    <div><p>(38)</p></div>
+                </div>
+                <p class="same-hover-2">Free shipping with $99 orders</p>
+            </div>
+        </div>
+    </div>
+    <div class="haha"></div>
+
+    <div id="capsules">
+        <div><p><b>Our Brands</b></p></div>
+    </div>
+    <div id="galti-2">
+        <div id="grid-3-1">
+            <div>
+                <p>HEALTH & NUTRITION</p>
+                <img src="https://img.shop.com/Image/homepage/healthnutirtion1572880380738.jpg" alt="photo" />
+            </div>
+            <div>
+                <p>BEAUTY</p>
+                <img src="https://img.shop.com/Image/homepage/lipstick1572880828301.jpg" alt="photo" />
+                
+            </div>
+            <div>
+                <p>HOME & CLEANING</p>
+                <img src="https://img.shop.com/Image/homepage/home_ma1572880950379.jpg" alt="photo" />
+                
+            </div>
+            <div>
+                <p>BABY &KIDS</p>
+                <img src="https://img.shop.com/Image/homepage/baby-kids1572881179463.jpg" alt="photo" />
+               
+            </div>
+            <div>
+                <p>JEWELRY</p>
+                <img src="https://img.shop.com/Image/homepage/1840336563__225x225-img__.jpg" alt="photo" />
+               
+            </div>
+        </div>
+    </div>
+
+    <!-- -------Footer-------- -->
+
+    <footer>
+        <div class="main">
+            <div class="firstfoot">
+                <div>
+                   <p>Get Email Deals & Earn Eashback</p>
+                    <div>
+                        <input type="text" name="" id="" placeholder="enter email address...">
+                        <button>Sign Up</button>
+                    </div>
+                </div>
+                <div id="friends">
+                    <span ><u id="lin">Links to this page</u></span>
+                    <span id="tell"><p>and tell of your friends!</p></span>
+                </div>
+            </div>
+            <div class="Secondfoot">
+                <div>
+                    <span>About Us</span>
+                    <span class="vline"></span>
+                    <span>Help</span>
+                    <span class="vline"></span>
+                    <span>Accessibility Statement</span>
+                    <span class="vline"></span>
+                    <span>Contact Us</span>
+                    <span class="vline"></span>
+                    <span>Partner With Us</span>
+                    <span class="vline"></span>
+                    <span>Services</span>
+                    <span class="vline"></span>
+                    <span>Services</span>
+                    <span class="vline"></span>
+                    <span><select name="" id="">
+                        <option value="">Country/Region</option>
+                        <option value="">Malaysia</option>
+                        <option value="">Singapore</option>
+                        <option value="">Hongkong</option>
+                    </select></span>
+                    <span class="vline"></span>
+                    <span><select name="" id="">
+                      <option value="">Connect</option>
+                      <option value="">Facebook</option>
+                      <option value="">Pinterest</option>
+                      <option value="">Twitter</option>
+                  </select></span>
+                  <span class="vline"></span>
+                  <span>Own your own SHOP sites</span>
+                </div>
+                <div id="footlogo">
+                    <div><img class="imgres" src="https://cdn-icons.flaticon.com/png/128/665/premium/665072.png?token=exp=1651801926~hmac=474cbb7b66d5b0c0b9fd394efda11552" alt=""></div>
+                    <div><img class="imgres" src="https://cdn-icons-png.flaticon.com/128/1051/1051309.png" alt=""></div>
+                    <div><img class="imgres" src="https://cdn-icons-png.flaticon.com/128/25/25347.png" alt=""></div>
+                    <div><img class="imgres" src="https://cdn-icons-png.flaticon.com/128/49/49440.png" alt=""></div>
+                </div>
+               
+            </div>
+        <div class="secondmain">
+           <p>© 1997-2022 Market America, Inc. or its affiliates. All other designated trademarks, copyrights, and brands are the property of their respective owners. </p>
+          <p>Only Customers will receive cashback on qualifying purchases. UnFranchise Owners/Shop Consultants will receive increased IBV instead of cashback on qualifying purchases.</p>
+          <u>Privacy Policy</u>
+          <span class="vline col"></span>
+          <u>Term Of Use</u>
+          <span class="vline col"></span>
+          <u>Advertising Disclosure</u>
+          <span class="vline col"></span>
+          <u>Return Policy</u>
+          <span class="vline col"></span>
+          <u>Shipping Information</u>
+        </div>
+    <div class="images">
+        <div class="credimg">
+            <div><img class="imgres" src="https://img.shop.com/Image/images/ir/Shop-ranks-19-in-newsweek-circle.png" alt=""></div>
+            <div><img class="imgres" src="https://img.shop.com/Image/images/ir/DC360_2021_rank_11_top_500_primary_merch_category.png" alt=""></div>
+            <div><img class="imgres" src="https://img.shop.com/Image/images/ir/DC360_2022_rank_55_top_100.png" alt=""></div>
+            <div><img class="imgres" src="https://img.shop.com/Image/images/ir/DC360_2022_rank_80_top_500_and_1000.png" alt=""></div>
+            <div><img class="imgres" src="https://img.shop.com/Image/images/ir/Shop-ranks-15-in-NC-circle.png" alt=""></div>
+            <div><img class="imgres" src="https://img.shop.com/Image/images/ir/commonwealth_2021_rank_25_top_2000_tw.png" alt=""></div>
+            <div><img class="imgres" src="https://img.shop.com/Image/resources/images/torch-tafe2018-badge.png" alt=""></div>
+            <div><img class="imgres" src="https://seal-greensboro.bbb.org/seals/blue-seal-153-100-marketamericashopcom-4002355.png" alt=""></div>
+          </div>
+        </div>
+    </div>
+    <div class="image2">
+        <div><img class="imgres" src="https://seal.digicert.com/seals/cascade/?tag=mcRGO2B9&referer=www.shop.com&format=png&lang=en&seal_number=3&seal_size=m&an=min" alt=""></div>
+    </div>
+        </footer> 
+
+    <!-- --------------Footer End------------- -->
+
+
+   
+    
+</body>
+</html>
+
+<script>
+    var obj = JSON.parse(localStorage.getItem("signindata"));
+            if(obj!=null){
+                const sign = document.querySelector('#signin');
+                var x = "Hi"+" "+obj.firstname;
+                sign.innerHTML= x
+                sign.style.color="black"
+                sign.style.backgroundcolor="red"
+            }
+   $(".btn").click(function () {
+     $(this).toggleClass("click");
+     $(".sidebar").toggleClass("show");
+   });
+   $(".feat-btn").click(function () {
+     $("nav ul .feat-show").toggleClass("show");
+     $("nav ul .first").toggleClass("rotate");
+   });
+   $(".serv-btn").click(function () {
+     $("nav ul .serv-show").toggleClass("show1");
+     $("nav ul .second").toggleClass("rotate");
+   });
+ 
+ </script>

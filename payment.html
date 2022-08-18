@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="footer.css">
+    <style>
+/* ---------------payment-style----------- */
+        form {
+            width: 400px;
+            display: grid;
+            gap: 20px;
+            font-family: sans-serif;
+            padding: 10px 30px 30px;
+            margin: auto;
+            margin-top: 40px;
+            font-size: 18px;
+            font-weight: lighter;
+        }
+
+        #payment {
+            box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+            width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            padding-bottom: 20px;
+            margin-bottom:30px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input {
+            height: 55px;
+            border-radius: 5px;
+            border: rgba(128, 128, 128, 0.23) solid 0.1px;
+            padding: 0px 20px;
+            font-size: 16.4px;
+            font-family:sans-serif;
+        }
+
+        input:last-child {
+            height: 55px;
+            color: grey;
+        }
+/* ------------payment-style-end----------- */
+
+    </style>
+</head>
+<body>
+  <header>
+    <div class="btn">
+      <span class="fas fa-bars"></span>
+      <i class="fas fa-circle-s"></i>
+    </div>
+
+    <nav class="sidebar">
+      <div class="logo-img">
+        <img src="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg">
+        <h1>SHOP.COM</h1>
+      </div>
+  
+      <ul class="myaccount">
+        
+        <li><a href="#">Account</a></li>
+        <li>
+          
+          <img src="https://img.shop.com/Image/resources/images/icon-sign-in-24px.svg">
+          <a href="signin.html">Sign In</a>
+        </li>
+        <li><img src="https://img.shop.com/Image/resources/images/icon-track-orders-24px.svg">
+          <a href="#">Track Orders</a>
+        </li>
+        <li><img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg">
+          <a href="#">Reorder Items</a>
+        </li>
+        <li><img src="https://img.shop.com/Image/resources/images/icon-help-outline-24px.svg">
+          <a href="#">Help</a>
+        </li>
+        <li><img src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg">
+          <a href="#">My Account</a>
+        </li>
+      
+      </ul>
+      <ul class="ulcat">
+        
+  
+  <li><a href="clothes.html">Clothes    </a></li>  
+  <li><a href="shoes.html">Shoes      </a></li>
+  <li><a href="#">Beauty    </a></li>  
+  <li><a href="#">Home      </a></li>
+  <li><a href="#">Electronics     </a></li> 
+  <li><a href="#">Health & Nutrition     </a></li> 
+  <li><a href="#">Jewelry      </a></li>
+  <li><a href="#">Kids      </a></li>
+  <li><a href="#">Pet Supplies      </a></li>
+  <li><a href="#">Food & Drink      </a></li>
+  <li><a href="#">Sports     </a></li> 
+  <li><a href="#">Travel     </a></li> 
+  <li><a href="#">SHOP Travel</a></li>
+  <li><a href="#">All Stores</a></li>
+  <li><a href="#">Exclusive Brandschevron </a></li>
+  <li><a href="#">All Departments</a></li>
+      </ul>
+    
+    </nav>
+    <div class="outercontainer">
+      <a class="bannertext">Shopping made easy. Buy now, pay later with Sezzle <span class="bannertext bannertextlink bannertextoverride">See details</span></a>
+  </div>
+  <div class="maincontainer">
+    <div id="first">
+     <div  class="headerlogodesktop"> <a href="home.html"><img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="SHOP.COM"></a> </div>
+    </div>
+    <div  id="second">
+        <div class="search">
+          <div>
+            <div class="ccol">
+              <select name="" id="sea2">
+                <option value="">All Departments</option>
+                <option value="">Auto</option>
+                <option value="">Baby</option>
+                <option value="">Beauty</option>
+                <option value="">Books</option>
+                <option value="">Business</option>
+                <option value="">Cameras</option>
+                <option value="">Clothes</option>
+                <option value="">Collectible</option>
+                <option value="">Computers</option>
+                <option value="">Craft</option>
+                <option value="">Craft</option>
+                <option value="">Electronics</option>
+                <option value="">Food and Drink</option>
+                <option value="">Electronics</option>
+                <option value="">Garden</option>
+              </select>
+            </div>
+            <div class="csea2"><input  id="sea" type="text" class="text" placeholder="Search SHOP.COM..."></div>
+            <div id="csea3"><img src="https://img.shop.com/Image/resources/images/icon-search-24px.svg" alt=""></div>
+          </div>
+          <div id="img"><img src="https://img.shop.com/Image/header2013/motives-usa-can-100110-sculpting-concealer-banners-header1650486339409.svg" alt=""></div>
+        </div>
+        <div class="search1">
+          <div class="links">
+            <div><a href="Exclusive_brands.html">Exclusive Brands</a></div>
+            <div><a href="stores.html">Store</a></div>
+            <div><a href="deals.html">Deals</a></div>
+            <div><a href="">SHOP Travels</a></div>
+            <div><a href="">Departments</a></div>
+            <div><a href="">Shopbuddy</a></div>
+            <div><a href="shoplocal.html">SHOP Local</a></div>
+          </div>
+          <div class="sign">
+            <div class="logo" id="signin"><div><img src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" alt=""></div><a href="signin.html"><div>Sign in</div></a></div>
+            <div class="logo"><div><img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg" alt=""></div><a href=""><div>Orders</div></a></div>
+            <div class="logo"><div><img src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg" alt=""></div><a href="cart.html"><div>Cart</div></a></div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+   </header>
+<!-- -------------navbar end------------ -->
+
+<!-- -----------------payment start---------- -->
+        <div id="payment">
+        <form id="form">
+            <h2>Payment Details</h2>
+            <label>Name</label>
+            <input id="name" type="text" placeholder="Enter Name" minlength="5" required />
+            <label>Card Number</label>
+            <input id="cnumber" type="number" placeholder="Enter Card Number" required />
+            <label>CVV</label>
+            <input id="cvv" type="number" placeholder="Enter CVV" required />
+            <label>Expiry Date</label>
+            <input id="expiryDate"  type="month" required />
+            <input id="sub" type="submit" value="SUBMIT" />
+        </form>
+        </div>
+<!-- --------------payment start-end----------- -->
+<footer>
+  <div class="main">
+      <div class="firstfoot">
+          <div>
+             <p>Get Email Deals & Earn Eashback</p>
+              <div>
+                  <input type="text" name="" id="" placeholder="enter email address...">
+                  <button>Sign Up</button>
+              </div>
+          </div>
+          <div id="friends">
+              <span ><u id="lin">Links to this page</u></span>
+              <span id="tell"><p>and tell of your friends!</p></span>
+          </div>
+      </div>
+      <div class="Secondfoot">
+          <div>
+              <span>About Us</span>
+              <span class="vline"></span>
+              <span>Help</span>
+              <span class="vline"></span>
+              <span>Accessibility Statement</span>
+              <span class="vline"></span>
+              <span>Contact Us</span>
+              <span class="vline"></span>
+              <span>Partner With Us</span>
+              <span class="vline"></span>
+              <span>Services</span>
+              <span class="vline"></span>
+              <span>Services</span>
+              <span class="vline"></span>
+              <span><select name="" id="">
+                  <option value="">Country/Region</option>
+                  <option value="">Malaysia</option>
+                  <option value="">Singapore</option>
+                  <option value="">Hongkong</option>
+              </select></span>
+              <span class="vline"></span>
+              <span><select name="" id="">
+                <option value="">Connect</option>
+                <option value="">Facebook</option>
+                <option value="">Pinterest</option>
+                <option value="">Twitter</option>
+            </select></span>
+            <span class="vline"></span>
+            <span>Own your own SHOP sites</span>
+          </div>
+          <div id="footlogo">
+              <div><img class="imgres" src="https://cdn-icons.flaticon.com/png/128/665/premium/665072.png?token=exp=1651801926~hmac=474cbb7b66d5b0c0b9fd394efda11552" alt=""></div>
+              <div><img class="imgres" src="https://cdn-icons-png.flaticon.com/128/1051/1051309.png" alt=""></div>
+              <div><img class="imgres" src="https://cdn-icons-png.flaticon.com/128/25/25347.png" alt=""></div>
+              <div><img class="imgres" src="https://cdn-icons-png.flaticon.com/128/49/49440.png" alt=""></div>
+          </div>
+         
+      </div>
+  <div class="secondmain">
+     <p>© 1997-2022 Market America, Inc. or its affiliates. All other designated trademarks, copyrights, and brands are the property of their respective owners. </p>
+    <p>Only Customers will receive cashback on qualifying purchases. UnFranchise Owners/Shop Consultants will receive increased IBV instead of cashback on qualifying purchases.</p>
+    <u>Privacy Policy</u>
+    <span class="vline col"></span>
+    <u>Term Of Use</u>
+    <span class="vline col"></span>
+    <u>Advertising Disclosure</u>
+    <span class="vline col"></span>
+    <u>Return Policy</u>
+    <span class="vline col"></span>
+    <u>Shipping Information</u>
+  </div>
+<div class="images">
+  <div class="credimg">
+      <div><img class="imgres" src="https://img.shop.com/Image/images/ir/Shop-ranks-19-in-newsweek-circle.png" alt=""></div>
+      <div><img class="imgres" src="https://img.shop.com/Image/images/ir/DC360_2021_rank_11_top_500_primary_merch_category.png" alt=""></div>
+      <div><img class="imgres" src="https://img.shop.com/Image/images/ir/DC360_2022_rank_55_top_100.png" alt=""></div>
+      <div><img class="imgres" src="https://img.shop.com/Image/images/ir/DC360_2022_rank_80_top_500_and_1000.png" alt=""></div>
+      <div><img class="imgres" src="https://img.shop.com/Image/images/ir/Shop-ranks-15-in-NC-circle.png" alt=""></div>
+      <div><img class="imgres" src="https://img.shop.com/Image/images/ir/commonwealth_2021_rank_25_top_2000_tw.png" alt=""></div>
+      <div><img class="imgres" src="https://img.shop.com/Image/resources/images/torch-tafe2018-badge.png" alt=""></div>
+      <div><img class="imgres" src="https://seal-greensboro.bbb.org/seals/blue-seal-153-100-marketamericashopcom-4002355.png" alt=""></div>
+    </div>
+  </div>
+</div>
+<div class="image2">
+  <div><img class="imgres" src="https://seal.digicert.com/seals/cascade/?tag=mcRGO2B9&referer=www.shop.com&format=png&lang=en&seal_number=3&seal_size=m&an=min" alt=""></div>
+</div>
+  </footer>
+</body>
+</html>
+
+
+
+<script>
+   var obj = JSON.parse(localStorage.getItem("signindata"));
+             if(obj!=null){
+                 const sign = document.querySelector('#signin');
+                 var x = "Hi"+" "+obj.firstname;
+                 sign.innerHTML= x
+                 sign.style.color="black"
+                 sign.style.backgroundcolor="red"
+             }
+    $(".btn").click(function () {
+      $(this).toggleClass("click");
+      $(".sidebar").toggleClass("show");
+    });
+    $(".feat-btn").click(function () {
+      $("nav ul .feat-show").toggleClass("show");
+      $("nav ul .first").toggleClass("rotate");
+    });
+    $(".serv-btn").click(function () {
+      $("nav ul .serv-show").toggleClass("show1");
+      $("nav ul .second").toggleClass("rotate");
+    });
+
+    document.querySelector("form").addEventListener("submit",paymentFunction);
+    function paymentFunction(){
+        event.preventDefault();
+        var name = document.querySelector("#name").value;
+        var cardNo = document.querySelector("#cnumber").value;
+        var cvv = document.querySelector("#cvv").value;
+        if(cardNo.length!==16){
+            alert("Error! Enter valid card details.")
+        }
+        else if(cvv.length!==3){
+            alert("Error! Enter valid card details.")
+        }
+        else {
+            window.location.href="OTP.html"
+        }
+    }
+    function cartPage() {
+        window.location.href="cart.html"
+    }
+    function userPage() {
+        window.location.href="user.html"
+    }
+    var token = localStorage.getItem("token");
+    var user1 = document.querySelector("#bar");
+    if(token){
+        var men = document.createElement("p")
+        men.setAttribute("onclick","mensPage()")
+        men.innerText="Men"
+        var women = document.createElement("p")
+        women.setAttribute("onclick","womensPage()")
+        women.innerText="Women"
+        var user = document.createElement("p")
+        user.setAttribute("onclick","userPage()")
+        user.innerText="User"
+        var cart = document.createElement("p")
+        cart.setAttribute("onclick","cartPage()")
+        cart.innerText="Cart"
+        user1.innerHTML="";
+        user1.append(men,women,user,cart);
+    }
+</script>

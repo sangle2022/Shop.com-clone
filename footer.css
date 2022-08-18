@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.main{
+    background-color: #5e6392;
+}
+
+.firstfoot{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5e6392;
+}
+button{
+    padding-top:3px;
+    padding-bottom: 3px;
+}
+.firstfoot>div:nth-child(1){
+    display:flex;
+    align-items: center;
+    color:white;
+    font-weight: bold;
+}
+p{
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif; 
+}
+p+div{
+    display:flex;
+    margin-left:10px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+#friends{
+    display:flex;
+    align-items: center;
+    color:white;
+}
+#tell{
+    margin-left: 4px;
+}
+input{
+    border:0px;
+}
+.footlogo{
+    width:10%;
+    display:flex;
+    justify-content: space-between;
+}
+.footlogo>div{
+    width:20%;
+}
+.vline{
+    margin-left:5px;
+    border:0.5px solid white;
+    padding-bottom:2px;
+    margin-right:5px;
+    height:60%;
+}
+.Secondfoot{
+    width:95%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5e6392;
+    color:white;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 12px;
+    font-weight: bold;
+    padding-left:10px;
+}
+select{
+    background-color: #5e6392; 
+    color:white;
+}
+.secondmain{
+    background-color: rgb(238, 238, 238);
+    padding-top:10px;
+    margin-top:0px;
+    padding-left:10px;
+    padding-bottom: 10px;
+    line-height:20px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.secondmain>p{
+    color:grey;
+}
+.secondmain>span{
+    border:0.5px solid grey;
+}
+u{
+    color:grey;
+}
+#lin{
+    color:white;
+}
+.images{
+    margin-top: 1px;
+    padding-top: 10px;
+    background-color: rgb(238, 238, 238);
+}
+.credimg{
+    width:70%;
+    margin:auto;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.credimg>div{
+width:10%;
+}
+.imgres{
+    width:100%;
+}
+
+.credimg2{
+    width:20%;
+    margin:auto;
+    display:flex;
+    align-items: center;
+}
+.image2{
+    width:100%;
+    background-color: rgb(238, 238, 238);
+}
+.image2>div{
+    width:10%;
+    margin:auto;
+    padding-top: 20px;
+}
+#footlogo{
+    display:flex;
+    width:15%;
+    margin-right:-70px;
+}
+#footlogo>div{
+   width:15%;
+   margin-right:5px;
+}
+#footlogo>div:hover{
+cursor: pointer;
+}
+#imgres2{
+    width:15%;
+}

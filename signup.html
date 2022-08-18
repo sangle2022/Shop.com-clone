@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="sidebar.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="footer.css">
+    <style>
+         
+     
+      form {
+  width: 900px;
+  border: 1px solid rgb(230, 230, 230);
+  
+  padding: 3%;
+margin: auto;
+  background: white;
+ 
+ 
+ 
+ 
+ 
+}
+#one{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+#three{
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+}
+.inp >input{
+    height: 30px;
+    width: 400px;
+    padding-top: 0px;
+   border: 1px solid rgb(60, 53, 53);
+}
+
+.h1234{
+    margin-bottom: 0px;
+   
+    color:  #575f9a;
+    
+}
+.h123{
+    font-weight: bold;
+    font-family: sans-serif;
+    color: rgb(4, 4, 87);
+    margin: 20px;
+}
+#fremail{
+    width: 800px;
+}
+#friend{
+    height: 100px;
+    width: 850px;
+    border: 1px solid rgb(240, 212, 212);
+    padding: 10px;
+    margin-top: 40px;
+}
+#check1{
+    display: flex;
+    gap: 0px;
+    margin-bottom: 10px;
+  
+}
+#check{
+    display: flex;
+    gap: 0px;
+    margin: auto;
+  
+}
+ #check > input{
+   
+    margin-top: 2px;
+   
+   
+}
+#check > p{
+  
+    font-size: 15px;
+  
+}  
+ #captcha{
+    height: 70px;
+    width: 300px;
+    border: 1px solid rgb(240, 212, 212);
+    display: flex;
+    
+} 
+ #captcha > input{
+
+ margin-top: 25px;
+ 
+
+} 
+#captcha > p{
+    
+margin-top: 20px;
+font-size: 20px;
+}
+#captcha > img{
+    margin-left: 45px;
+
+height: 70px;
+}
+
+#submit{
+    height: 50px;
+    width: 600px;
+    background-color: rgb(3, 3, 71);
+    color: white;
+    text-align: center;
+     font-size: medium;
+    position: absolute;
+    margin-top:20px ;
+   
+}
+
+ #bottom{
+     margin-top: 100px;
+ }
+ #sea2{
+     color: #575f9a;
+ }
+ 
+ 
+    </style>
+</head>
+<body>
+    <!-- <div id="navbar"> -->
+        <header>
+            <div class="btn">
+              <span class="fas fa-bars"></span>
+              <i class="fas fa-circle-s"></i>
+            </div>
+        
+            <nav class="sidebar">
+              <div class="logo-img">
+                <img src="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg">
+                <h1>SHOP.COM</h1>
+              </div>
+          
+              <ul class="myaccount">
+                
+                <li><a href="#">Account</a></li>
+                <li>
+                  
+                  <img src="https://img.shop.com/Image/resources/images/icon-sign-in-24px.svg">
+                  <a href="signin.html">Sign In</a>
+                </li>
+                <li><img src="https://img.shop.com/Image/resources/images/icon-track-orders-24px.svg">
+                  <a href="#">Track Orders</a>
+                </li>
+                <li><img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg">
+                  <a href="#">Reorder Items</a>
+                </li>
+                <li><img src="https://img.shop.com/Image/resources/images/icon-help-outline-24px.svg">
+                  <a href="#">Help</a>
+                </li>
+                <li><img src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg">
+                  <a href="#">My Account</a>
+                </li>
+              
+              </ul>
+              <ul class="ulcat">
+                
+          
+          <li><a href="clothes.html">Clothes    </a></li>  
+          <li><a href="shoes.html">Shoes      </a></li>
+          <li><a href="#">Beauty    </a></li>  
+          <li><a href="#">Home      </a></li>
+          <li><a href="#">Electronics     </a></li> 
+          <li><a href="#">Health & Nutrition     </a></li> 
+          <li><a href="#">Jewelry      </a></li>
+          <li><a href="#">Kids      </a></li>
+          <li><a href="#">Pet Supplies      </a></li>
+          <li><a href="#">Food & Drink      </a></li>
+          <li><a href="#">Sports     </a></li> 
+          <li><a href="#">Travel     </a></li> 
+          <li><a href="#">SHOP Travel</a></li>
+          <li><a href="#">All Stores</a></li>
+          <li><a href="#">Exclusive Brandschevron </a></li>
+          <li><a href="#">All Departments</a></li>
+              </ul>
+            
+            </nav>
+            <div class="outercontainer">
+              <a class="bannertext">Shopping made easy. Buy now, pay later with Sezzle <span class="bannertext bannertextlink bannertextoverride">See details</span></a>
+          </div>
+          <div class="maincontainer">
+            <div id="first">
+             <div  class="headerlogodesktop"> <a href="home.html"><img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="SHOP.COM"></a> </div>
+            </div>
+            <div  id="second">
+                <div class="search">
+                  <div>
+                    <div class="ccol">
+                      <select name="" id="sea2">
+                        <option value="">All Departments</option>
+                        <option value="">Auto</option>
+                        <option value="">Baby</option>
+                        <option value="">Beauty</option>
+                        <option value="">Books</option>
+                        <option value="">Business</option>
+                        <option value="">Cameras</option>
+                        <option value="">Clothes</option>
+                        <option value="">Collectible</option>
+                        <option value="">Computers</option>
+                        <option value="">Craft</option>
+                        <option value="">Craft</option>
+                        <option value="">Electronics</option>
+                        <option value="">Food and Drink</option>
+                        <option value="">Electronics</option>
+                        <option value="">Garden</option>
+                      </select>
+                    </div>
+                    <div class="csea2"><input  id="sea" type="text" class="text" placeholder="Search SHOP.COM..."></div>
+                    <div id="csea3"><img src="https://img.shop.com/Image/resources/images/icon-search-24px.svg" alt=""></div>
+                  </div>
+                  <div id="img"><img src="https://img.shop.com/Image/header2013/motives-usa-can-100110-sculpting-concealer-banners-header1650486339409.svg" alt=""></div>
+                </div>
+                <div class="search1">
+                  <div class="links">
+                    <div><a href="Exclusive_brands.html">Exclusive Brands</a></div>
+                    <div><a href="stores.html">Store</a></div>
+                    <div><a href="deals.html">Deals</a></div>
+                    <div><a href="">SHOP Travels</a></div>
+                    <div><a href="">Departments</a></div>
+                    <div><a href="">Shopbuddy</a></div>
+                    <div><a href="shoplocal.html">SHOP Local</a></div>
+                  </div>
+                  <div class="sign">
+                    <div class="logo" id="signin"><div><img src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" alt=""></div><a href="signin.html"><div>Sign in</div></a></div>
+                    <div class="logo"><div><img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg" alt=""></div><a href=""><div>Orders</div></a></div>
+                    <div class="logo"><div><img src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg" alt=""></div><a href="cart.html"><div>Cart</div></a></div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        
+           </header>
+    <!-- </div> -->
+   
+   <form id="form">
+    <h1 class="h123">Create an account</h1>
+    <h3 class="h123">* Indicates required field</h3>
+    <div id="one">
+        <div class="inp">
+            <h4 class="h1234">First name*</h4>
+            <input placeholder="First Name here" id="firstname"  type="text" />
+
+        </div>
+        <div class="inp"> 
+            <h4 class="h1234">Last name*</h4>
+            <input placeholder="Last Name here" id="lastname"  type="text" />
+        </div>
+    </div>
+    <div>
+        <div class="inp"> 
+            <h4 class="h1234">Email address*</h4>
+            <input placeholder="yourname@example.com" id="email"  type="text" />
+        </div> 
+    </div>
+    <div id="three">
+        <div class="inp">
+            <h4 class="h1234">Password* (At least 7 characters)</h4>
+            <input placeholder="please enter a minimum of 7 characters" id="password"  type="text" />
+
+        </div>
+        <div class="inp"> 
+            <h4 class="h1234">Confirm password*</h4>
+            <input placeholder="please reenter your password" id="confirmpassword"  type="text" />
+        </div>
+    </div>
+    <h3 class="h123">Text Message (SMS) Alerts: (Optional)</h3>
+     <div id="check1">
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <h4>Do you want to sign up for Shopper alerts from SHOP.COM? (Message and data rates may apply.)</h4>
+    </div>
+    <div class="inp"> 
+        <h4 class="h1234">Enter a mobile number</h4>
+        <input placeholder="Please enter your 10 digit phone number" id="mobaile"  type="text" />
+    </div>
+    <div id="friend">
+        <div class="inp"> 
+            <h4 class="h1234">Were you referred by a friend?<br>
+                Enter their email address (Optional)</h4>
+            <input id="fremail"  type="text" />
+        </div>
+    </div>
+    <h4 class="h1234">Your Shop Consultant is SHOP.COM</h4>
+    <h3 class="h123">Email deals: (Optional)</h3>
+    <div id="check">
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <p>Do you want to sign up for sweet email offers and discounts from SHOP.COM?</p>
+    </div>
+    <div id="check">
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <p>Do you want to sign up for sweet email offers and discounts from MarketAmerica.com and its brands?</p>
+    </div>
+    <h3 class="h123">Also, please confirm you are not a robot:</h3>
+   
+    <div id="captcha">
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <p>I'm not a robot</p>
+        <img src="https://upload.turkcewiki.org/wikipedia/commons/thumb/a/ad/RecaptchaLogo.svg/330px-RecaptchaLogo.svg.png"alt="suru"/>
+
+    </div>
+    <div id="clk">
+        <input id="submit" type="submit"  value="Create your new account" />
+        <!-- <p>Create your new account</p> -->
+       
+    </div>
+    <p id="bottom">By creating an account, you are agreeing to our Terms of Service and Privacy Policy.</p>
+   
+   </form>
+
+
+
+   <footer>
+    <div class="main">
+        <div class="firstfoot">
+            <div>
+               <!-- <p>Get Email Deals & Earn Eashback</p> -->
+                <div>
+                    <!-- <input type="text" name="" id="" placeholder="enter email address...">
+                    <button>Sign Up</button> -->
+                </div>
+            </div>
+            <div id="friends">
+                <span ><u id="lin">Links to this page</u></span>
+                <span id="tell"><p>and tell of your friends!</p></span>
+            </div>
+        </div>
+        <div class="Secondfoot">
+            <div>
+                <span>About Us</span>
+                <span class="vline"></span>
+                <span>Help</span>
+                <span class="vline"></span>
+                <span>Accessibility Statement</span>
+                <span class="vline"></span>
+                <span>Contact Us</span>
+                <span class="vline"></span>
+                <span>Partner With Us</span>
+                <span class="vline"></span>
+                <span>Services</span>
+                <span class="vline"></span>
+                <span>Services</span>
+                <span class="vline"></span>
+                <span><select name="" id="">
+                    <option value="">Country/Region</option>
+                    <option value="">Malaysia</option>
+                    <option value="">Singapore</option>
+                    <option value="">Hongkong</option>
+                </select></span>
+                <span class="vline"></span>
+                <span><select name="" id="">
+                  <option value="">Connect</option>
+                  <option value="">Facebook</option>
+                  <option value="">Pinterest</option>
+                  <option value="">Twitter</option>
+              </select></span>
+              <span class="vline"></span>
+              <span>Own your own SHOP sites</span>
+            </div>
+            <div id="footlogo">
+                <div><img class="imgres" src="https://t3.ftcdn.net/jpg/01/76/14/48/240_F_176144809_ZuZHUmtmaPafTOa8jsGZmOBCpqH1Sa7r.jpg" alt=""></div>
+                <div><img class="imgres" src="https://cdn-icons-png.flaticon.com/128/145/145802.png" alt=""></div>
+                <div><img class="imgres" src="https://cdn-icons.flaticon.com/png/128/3256/premium/3256013.png?token=exp=1651814111~hmac=500c54114a20fd83a3256c1a87a2ec44" alt=""></div>
+                <div><img class="imgres" src="https://cdn-icons-png.flaticon.com/128/250/250549.png" alt=""></div>
+            </div>
+           
+        </div>
+    <div class="secondmain">
+       <p>© 1997-2022 Market America, Inc. or its affiliates. All other designated trademarks, copyrights, and brands are the property of their respective owners. </p>
+      <p>Only Customers will receive cashback on qualifying purchases. UnFranchise Owners/Shop Consultants will receive increased IBV instead of cashback on qualifying purchases.</p>
+      <u>Privacy Policy</u>
+      <span class="vline col"></span>
+      <u>Term Of Use</u>
+      <span class="vline col"></span>
+      <u>Advertising Disclosure</u>
+      <span class="vline col"></span>
+      <u>Return Policy</u>
+      <span class="vline col"></span>
+      <u>Shipping Information</u>
+    </div>
+<div class="images">
+    <div class="credimg">
+        <div><img class="imgres" src="https://img.shop.com/Image/images/ir/Shop-ranks-19-in-newsweek-circle.png" alt=""></div>
+        <div><img class="imgres" src="https://img.shop.com/Image/images/ir/DC360_2021_rank_11_top_500_primary_merch_category.png" alt=""></div>
+        <div><img class="imgres" src="https://img.shop.com/Image/images/ir/DC360_2022_rank_55_top_100.png" alt=""></div>
+        <div><img class="imgres" src="https://img.shop.com/Image/images/ir/DC360_2022_rank_80_top_500_and_1000.png" alt=""></div>
+        <div><img class="imgres" src="https://img.shop.com/Image/images/ir/Shop-ranks-15-in-NC-circle.png" alt=""></div>
+        <div><img class="imgres" src="https://img.shop.com/Image/images/ir/commonwealth_2021_rank_25_top_2000_tw.png" alt=""></div>
+        <div><img class="imgres" src="https://img.shop.com/Image/resources/images/torch-tafe2018-badge.png" alt=""></div>
+        <div><img class="imgres" src="https://seal-greensboro.bbb.org/seals/blue-seal-153-100-marketamericashopcom-4002355.png" alt=""></div>
+      </div>
+    </div>
+</div>
+<div class="image2">
+    <div><img class="imgres" src="https://seal.digicert.com/seals/cascade/?tag=mcRGO2B9&referer=www.shop.com&format=png&lang=en&seal_number=3&seal_size=m&an=min" alt=""></div>
+</div>
+    </footer>
+
+
+
+  
+</body>
+</html>
+
+<script>
+     document.querySelector("form").addEventListener("submit",jobsubmit);
+
+     var obj = JSON.parse(localStorage.getItem("signindata"));
+             if(obj!=null){
+                 const sign = document.querySelector('#signin');
+                 var x = "Hi"+" "+obj.firstname;
+                 sign.innerHTML= x
+                 sign.style.color="black"
+                 sign.style.backgroundcolor="red"
+             }
+    $(".btn").click(function () {
+      $(this).toggleClass("click");
+      $(".sidebar").toggleClass("show");
+    });
+    $(".feat-btn").click(function () {
+      $("nav ul .feat-show").toggleClass("show");
+      $("nav ul .first").toggleClass("rotate");
+    });
+    $(".serv-btn").click(function () {
+      $("nav ul .serv-show").toggleClass("show1");
+      $("nav ul .second").toggleClass("rotate");
+    });
+ 
+    function jobsubmit(){
+        event.preventDefault()
+
+        var data={
+            firstname:form.firstname.value,
+            lastname:form.lastname.value,
+            email:form.email.value,
+            password:form.password.value,
+            confirmpassword:form.confirmpassword.value,
+            mobailenumber:form.mobaile.value,
+            friendmail:form.fremail.value
+
+        }
+       
+        localStorage.setItem("shopdata",JSON.stringify(data));
+        alert("Account create Succesfully");
+       
+        window.location.href="signin.html"
+    }
+</script>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sidebar Menu with sub-menu | CodingNepal</title>
+    <link rel="stylesheet" href="sidebar.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div class="btn">
+      <span class="fas fa-bars"></span>
+      <i class="fas fa-circle-s"></i>
+    </div>
+    <nav class="sidebar">
+      <div class="logo-img">
+        <img src="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg">
+        <h1>SHOP.COM</h1>
+      </div>
+
+      <ul class="myaccount">
+        
+        <li><a href="#">Account</a></li>
+        <li>
+          
+          <img src="https://img.shop.com/Image/resources/images/icon-sign-in-24px.svg">
+          <a href="#">Sign In</a>
+        </li>
+        <li><img src="https://img.shop.com/Image/resources/images/icon-track-orders-24px.svg">
+          <a href="#">Track Orders</a>
+        </li>
+        <li><img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg">
+          <a href="#">Reorder Items</a>
+        </li>
+        <li><img src="https://img.shop.com/Image/resources/images/icon-help-outline-24px.svg">
+          <a href="#">Help</a>
+        </li>
+        <li><img src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg">
+          <a href="#">My Account</a>
+        </li>
+      
+      </ul>
+      <ul class="ulcat">
+        
+
+<li><a href="#">Clothes    </a></li>  
+<li><a href="#">Shoes      </a></li>
+<li><a href="#">Beauty    </a></li>  
+<li><a href="#">Home      </a></li>
+<li><a href="#">Electronics     </a></li> 
+<li><a href="#">Health & Nutrition     </a></li> 
+<li><a href="#">Jewelry      </a></li>
+<li><a href="#">Kids      </a></li>
+<li><a href="#">Pet Supplies      </a></li>
+<li><a href="#">Food & Drink      </a></li>
+<li><a href="#">Sports     </a></li> 
+<li><a href="#">Travel     </a></li> 
+<li><a href="#">SHOP Travel</a></li>
+<li><a href="#">All Stores</a></li>
+<li><a href="#">Exclusive Brandschevron </a></li>
+<li><a href="#">All Departments</a></li>
+      </ul>
+    
+    </nav>
+
+   
+  
+
+    <script>
+      $(".btn").click(function () {
+        $(this).toggleClass("click");
+        $(".sidebar").toggleClass("show");
+      });
+      $(".feat-btn").click(function () {
+        $("nav ul .feat-show").toggleClass("show");
+        $("nav ul .first").toggleClass("rotate");
+      });
+      $(".serv-btn").click(function () {
+        $("nav ul .serv-show").toggleClass("show1");
+        $("nav ul .second").toggleClass("rotate");
+      });
+    
+    </script>
+  </body>
+</html>

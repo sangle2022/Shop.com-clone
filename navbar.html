@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="sidebar.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Document</title>
+</head>
+<body>
+   <header>
+    <div class="btn">
+      <span class="fas fa-bars"></span>
+      <i class="fas fa-circle-s"></i>
+    </div>
+
+    <nav class="sidebar">
+      <div class="logo-img">
+        <img src="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg">
+        <h1>SHOP.COM</h1>
+      </div>
+  
+      <ul class="myaccount">
+        
+        <li><a href="#">Account</a></li>
+        <li>
+          
+          <img src="https://img.shop.com/Image/resources/images/icon-sign-in-24px.svg">
+          <a href="signin.html">Sign In</a>
+        </li>
+        <li><img src="https://img.shop.com/Image/resources/images/icon-track-orders-24px.svg">
+          <a href="#">Track Orders</a>
+        </li>
+        <li><img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg">
+          <a href="#">Reorder Items</a>
+        </li>
+        <li><img src="https://img.shop.com/Image/resources/images/icon-help-outline-24px.svg">
+          <a href="#">Help</a>
+        </li>
+        <li><img src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg">
+          <a href="#">My Account</a>
+        </li>
+      
+      </ul>
+      <ul class="ulcat">
+        
+  
+  <li><a href=".clothes.html">Clothes    </a></li>  
+  <li><a href="shoes.html">Shoes      </a></li>
+  <li><a href="#">Beauty    </a></li>  
+  <li><a href="#">Home      </a></li>
+  <li><a href="#">Electronics     </a></li> 
+  <li><a href="#">Health & Nutrition     </a></li> 
+  <li><a href="#">Jewelry      </a></li>
+  <li><a href="#">Kids      </a></li>
+  <li><a href="#">Pet Supplies      </a></li>
+  <li><a href="#">Food & Drink      </a></li>
+  <li><a href="#">Sports     </a></li> 
+  <li><a href="#">Travel     </a></li> 
+  <li><a href="#">SHOP Travel</a></li>
+  <li><a href="#">All Stores</a></li>
+  <li><a href="#">Exclusive Brandschevron </a></li>
+  <li><a href="#">All Departments</a></li>
+      </ul>
+    
+    </nav>
+    <div class="outercontainer">
+      <a class="bannertext">Shopping made easy. Buy now, pay later with Sezzle <span class="bannertext bannertextlink bannertextoverride">See details</span></a>
+  </div>
+  <div class="maincontainer">
+    <div id="first">
+     <div  class="headerlogodesktop"> <a href="home.html"><img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="SHOP.COM"></a> </div>
+    </div>
+    <div  id="second">
+        <div class="search">
+          <div id="srch">
+            <div class="ccol">
+              <select name="" id="sea2">
+                <option value="">All Departments</option>
+                <option value="">Auto</option>
+                <option value="">Baby</option>
+                <option value="">Beauty</option>
+                <option value="">Books</option>
+                <option value="">Business</option>
+                <option value="">Cameras</option>
+                <option value="">Clothes</option>
+                <option value="">Collectible</option>
+                <option value="">Computers</option>
+                <option value="">Craft</option>
+                <option value="">Craft</option>
+                <option value="">Electronics</option>
+                <option value="">Food and Drink</option>
+                <option value="">Electronics</option>
+                <option value="">Garden</option>
+              </select>
+            </div>
+            <div class="csea2"><input  id="sea" type="text" class="text" placeholder="Search SHOP.COM..."></div>
+            <div id="csea3"><img src="https://img.shop.com/Image/resources/images/icon-search-24px.svg" alt=""></div>
+          </div>
+          <div id="img"><img src="https://img.shop.com/Image/header2013/motives-usa-can-100110-sculpting-concealer-banners-header1650486339409.svg" alt=""></div>
+        </div>
+        <div class="search1">
+          <div class="links">
+            <div><a href="Exclusive_brands.html">Exclusive Brands</a></div>
+            <div><a href="stores.html">Store</a></div>
+            <div><a href="deals.html">Deals</a></div>
+            <div><a href="">SHOP Travels</a></div>
+            <div><a href="">Departments</a></div>
+            <div><a href="">Shopbuddy</a></div>
+            <div><a href="shoplocal.html">SHOP Local</a></div>
+          </div>
+          <div class="sign">
+            <div class="logo" id="signin"><div><img src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" alt=""></div><a href="signin.html"><div>Sign in</div></a></div>
+            <div class="logo"><div><img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg" alt=""></div><a href=""><div>Orders</div></a></div>
+            <div class="logo"><div><img src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg" alt=""></div><a href="cart.html"><div>Cart</div></a></div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+   </header>
+   <script>
+     var obj = JSON.parse(localStorage.getItem("signindata"));
+             if(obj!=null){
+                 const sign = document.querySelector('#signin');
+                 var x = "Hi"+" "+obj.firstname;
+                 sign.innerHTML= x
+                 sign.style.color="black"
+                 sign.style.backgroundcolor="red"
+             }
+    $(".btn").click(function () {
+      $(this).toggleClass("click");
+      $(".sidebar").toggleClass("show");
+    });
+    $(".feat-btn").click(function () {
+      $("nav ul .feat-show").toggleClass("show");
+      $("nav ul .first").toggleClass("rotate");
+    });
+    $(".serv-btn").click(function () {
+      $("nav ul .serv-show").toggleClass("show1");
+      $("nav ul .second").toggleClass("rotate");
+    });
+  
+  </script>
+</body>
+</html>

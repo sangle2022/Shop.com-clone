@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="sidebar.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="footer.css">
+    <style>
+  /* -----------------------cart-style------------------------- */
+        body{
+        font-family:sans-serif;
+        }
+        #container {
+        margin-top: 15px;
+        display: grid;
+        grid-template-columns: repeat(4, 23%);
+        width: 100%;
+        gap: 20px;
+        font-family: sans-serif;
+        margin:auto;
+        }
+
+        #container>div {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 10px;
+        padding: 0px 0px 10px 0px;
+        margin: 100px 0px 100px 0px ;
+        }
+
+        #container>div>div:nth-child(3) {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 15px;
+        }
+
+        #container>div>div>p+p {
+        text-decoration: line-through;
+        color: grey;
+        }
+
+        img {
+        width: 100%;
+        border-radius: 10px
+        }
+
+        button {
+        margin: 15px 15px;
+        border-radius: 5px;
+        font-size: 15.5px;
+        border: 3px rgb(237, 22, 86) solid;
+        background-color: rgb(237, 22, 86);
+        color:white;
+        padding:2px 5px;
+        }
+
+        button:hover {
+        cursor: pointer;
+        opacity: 0.8;
+        }
+
+        h4 {
+        width: auto;
+        padding: 15px;
+        margin-top: -15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        }
+
+        #cart {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:10px;
+        padding:0px 10px;
+        }
+
+        #cart>div {
+        display: flex;
+        gap: 10px;
+        font-size: 17px;
+        font-family: sans-serif;
+        align-items: center;
+        }
+
+        #promo {
+        height: auto;
+        border-radius: 4px;
+        border: 4px solid rgba(0, 34, 255, 0.561);
+        font-size: 17px;
+        width: 160px;
+        padding-left: 10px;
+        }
+
+        #prBtn {
+        height: auto;
+        }
+
+        #prBtn:hover {
+        opacity: 0.8;
+        cursor: pointer;
+        }
+
+        #cartItems,
+        #totalPrice {
+        border: 4px solid rgba(36, 36, 50, 0.538);
+        border-radius: 4px;
+        }
+
+        #boxId {
+        display: flex;
+        padding: 0px 15px;
+        font-size: 19px;
+        align-items: center;
+        }
+
+        h5+h5+button {
+        background-color: rgba(181, 175, 175, 0.17);
+        border-radius: 10px;
+        height: 25px;
+        border: 3px solid rgba(6, 6, 130, 0.851);
+        background-color: rgba(22, 22, 135, 0.854);
+        color:white;
+        padding:0px 6px;
+        }
+        #placeOrder{
+        width:100%;
+        display:flex;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        bottom: 0;
+        justify-content: flex-end;
+        background-color: beige;
+        padding:15px 0px;
+        }
+        #orderBtn{
+        font-size:19px;
+        font-weight:bold;
+        padding: 10px 25px;
+        background-color:rgb(250, 6, 6);
+        border-color:rgb(49, 247, 75);
+        }
+        #cd{
+            width: 100%;
+            height: 30px;
+            background-color: #F0F1F7
+        }
+  /* ----------------------cart-style-end------------------------ */
+  </style>
+</head>
+<body>
+    <!-- ------------navbar--------- -->
+    <header>
+      <div class="btn">
+        <span class="fas fa-bars"></span>
+        <i class="fas fa-circle-s"></i>
+      </div>
+  
+      <nav class="sidebar">
+        <div class="logo-img">
+          <img src="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg">
+          <h1>SHOP.COM</h1>
+        </div>
+    
+        <ul class="myaccount">
+          
+          <li><a href="#">Account</a></li>
+          <li>
+            
+            <img src="https://img.shop.com/Image/resources/images/icon-sign-in-24px.svg">
+            <a href="signin.html">Sign In</a>
+          </li>
+          <li><img src="https://img.shop.com/Image/resources/images/icon-track-orders-24px.svg">
+            <a href="#">Track Orders</a>
+          </li>
+          <li><img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg">
+            <a href="#">Reorder Items</a>
+          </li>
+          <li><img src="https://img.shop.com/Image/resources/images/icon-help-outline-24px.svg">
+            <a href="#">Help</a>
+          </li>
+          <li><img src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg">
+            <a href="#">My Account</a>
+          </li>
+        
+        </ul>
+        <ul class="ulcat">
+          
+    
+    <li><a href="clothes.html">Clothes    </a></li>  
+    <li><a href="shoes.html">Shoes      </a></li>
+    <li><a href="#">Beauty    </a></li>  
+    <li><a href="#">Home      </a></li>
+    <li><a href="#">Electronics     </a></li> 
+    <li><a href="#">Health & Nutrition     </a></li> 
+    <li><a href="#">Jewelry      </a></li>
+    <li><a href="#">Kids      </a></li>
+    <li><a href="#">Pet Supplies      </a></li>
+    <li><a href="#">Food & Drink      </a></li>
+    <li><a href="#">Sports     </a></li> 
+    <li><a href="#">Travel     </a></li> 
+    <li><a href="#">SHOP Travel</a></li>
+    <li><a href="#">All Stores</a></li>
+    <li><a href="#">Exclusive Brandschevron </a></li>
+    <li><a href="#">All Departments</a></li>
+        </ul>
+      
+      </nav>
+      <div class="outercontainer">
+        <a class="bannertext">Shopping made easy. Buy now, pay later with Sezzle <span class="bannertext bannertextlink bannertextoverride">See details</span></a>
+    </div>
+    <div class="maincontainer">
+      <div id="first">
+       <div  class="headerlogodesktop"> <a href="home.html"><img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="SHOP.COM"></a> </div>
+      </div>
+      <div  id="second">
+          <div class="search">
+            <div>
+              <div class="ccol">
+                <select name="" id="sea2">
+                  <option value="">All Departments</option>
+                  <option value="">Auto</option>
+                  <option value="">Baby</option>
+                  <option value="">Beauty</option>
+                  <option value="">Books</option>
+                  <option value="">Business</option>
+                  <option value="">Cameras</option>
+                  <option value="">Clothes</option>
+                  <option value="">Collectible</option>
+                  <option value="">Computers</option>
+                  <option value="">Craft</option>
+                  <option value="">Craft</option>
+                  <option value="">Electronics</option>
+                  <option value="">Food and Drink</option>
+                  <option value="">Electronics</option>
+                  <option value="">Garden</option>
+                </select>
+              </div>
+              <div class="csea2"><input  id="sea" type="text" class="text" placeholder="Search SHOP.COM..."></div>
+              <div id="csea3"><img src="https://img.shop.com/Image/resources/images/icon-search-24px.svg" alt=""></div>
+            </div>
+            <div id="img"><img src="https://img.shop.com/Image/header2013/motives-usa-can-100110-sculpting-concealer-banners-header1650486339409.svg" alt=""></div>
+          </div>
+          <div class="search1">
+            <div class="links">
+              <div><a href="Exclusive_brands.html">Exclusive Brands</a></div>
+              <div><a href="stores.html">Store</a></div>
+              <div><a href="deals.html">Deals</a></div>
+              <div><a href="">SHOP Travels</a></div>
+              <div><a href="">Departments</a></div>
+              <div><a href="">Shopbuddy</a></div>
+              <div><a href="shoplocal.html">SHOP Local</a></div>
+            </div>
+            <div class="sign">
+              <div class="logo" id="signin"><div><img src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" alt=""></div><a href="signin.html"><div>Sign in</div></a></div>
+              <div class="logo"><div><img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg" alt=""></div><a href=""><div>Orders</div></a></div>
+              <div class="logo"><div><img src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg" alt=""></div><a href="cart.html"><div>Cart</div></a></div>
+            </div>
+          </div>
+      </div>
+    </div>
+  
+     </header>
+   <!-- ---------navbar end---------- -->
+
+   <!-- -------------cart-------------------- -->
+   <div id="cd"></div>
+  <div id="cart">
+    <h2>Cart</h2>
+    <div>
+      <input type="text" id="promo" placeholder="Promo Code" />
+      <button id="prBtn">Apply Promo</button>
+      <p id="cartItems"></p>
+      <p id="totalPrice"></p>
+    </div>
+  </div>
+  <div id="container"></div>
+  <div id="placeOrder">
+    <button id="orderBtn">PLACE ORDER</button>
+  </div>
+   <!-- --------------cart end--------------- -->
+   <footer>
+    <div class="main">
+        <div class="firstfoot">
+            <div>
+               <p>Get Email Deals & Earn Eashback</p>
+                <div>
+                    <input type="text" name="" id="" placeholder="enter email address...">
+                    <button>Sign Up</button>
+                </div>
+            </div>
+            <div id="friends">
+                <span ><u id="lin">Links to this page</u></span>
+                <span id="tell"><p>and tell of your friends!</p></span>
+            </div>
+        </div>
+        <div class="Secondfoot">
+            <div>
+                <span>About Us</span>
+                <span class="vline"></span>
+                <span>Help</span>
+                <span class="vline"></span>
+                <span>Accessibility Statement</span>
+                <span class="vline"></span>
+                <span>Contact Us</span>
+                <span class="vline"></span>
+                <span>Partner With Us</span>
+                <span class="vline"></span>
+                <span>Services</span>
+                <span class="vline"></span>
+                <span>Services</span>
+                <span class="vline"></span>
+                <span><select name="" id="">
+                    <option value="">Country/Region</option>
+                    <option value="">Malaysia</option>
+                    <option value="">Singapore</option>
+                    <option value="">Hongkong</option>
+                </select></span>
+                <span class="vline"></span>
+                <span><select name="" id="">
+                  <option value="">Connect</option>
+                  <option value="">Facebook</option>
+                  <option value="">Pinterest</option>
+                  <option value="">Twitter</option>
+              </select></span>
+              <span class="vline"></span>
+              <span>Own your own SHOP sites</span>
+            </div>
+            <div id="footlogo">
+                <div><img class="imgres" src="https://cdn-icons.flaticon.com/png/128/665/premium/665072.png?token=exp=1651801926~hmac=474cbb7b66d5b0c0b9fd394efda11552" alt=""></div>
+                <div><img class="imgres" src="https://cdn-icons-png.flaticon.com/128/1051/1051309.png" alt=""></div>
+                <div><img class="imgres" src="https://cdn-icons-png.flaticon.com/128/25/25347.png" alt=""></div>
+                <div><img class="imgres" src="https://cdn-icons-png.flaticon.com/128/49/49440.png" alt=""></div>
+            </div>
+           
+        </div>
+    <div class="secondmain">
+       <p>© 1997-2022 Market America, Inc. or its affiliates. All other designated trademarks, copyrights, and brands are the property of their respective owners. </p>
+      <p>Only Customers will receive cashback on qualifying purchases. UnFranchise Owners/Shop Consultants will receive increased IBV instead of cashback on qualifying purchases.</p>
+      <u>Privacy Policy</u>
+      <span class="vline col"></span>
+      <u>Term Of Use</u>
+      <span class="vline col"></span>
+      <u>Advertising Disclosure</u>
+      <span class="vline col"></span>
+      <u>Return Policy</u>
+      <span class="vline col"></span>
+      <u>Shipping Information</u>
+    </div>
+<div class="images">
+    <div class="credimg">
+        <div><img class="imgres" src="https://img.shop.com/Image/images/ir/Shop-ranks-19-in-newsweek-circle.png" alt=""></div>
+        <div><img class="imgres" src="https://img.shop.com/Image/images/ir/DC360_2021_rank_11_top_500_primary_merch_category.png" alt=""></div>
+        <div><img class="imgres" src="https://img.shop.com/Image/images/ir/DC360_2022_rank_55_top_100.png" alt=""></div>
+        <div><img class="imgres" src="https://img.shop.com/Image/images/ir/DC360_2022_rank_80_top_500_and_1000.png" alt=""></div>
+        <div><img class="imgres" src="https://img.shop.com/Image/images/ir/Shop-ranks-15-in-NC-circle.png" alt=""></div>
+        <div><img class="imgres" src="https://img.shop.com/Image/images/ir/commonwealth_2021_rank_25_top_2000_tw.png" alt=""></div>
+        <div><img class="imgres" src="https://img.shop.com/Image/resources/images/torch-tafe2018-badge.png" alt=""></div>
+        <div><img class="imgres" src="https://seal-greensboro.bbb.org/seals/blue-seal-153-100-marketamericashopcom-4002355.png" alt=""></div>
+      </div>
+    </div>
+</div>
+<div class="image2">
+    <div><img class="imgres" src="https://seal.digicert.com/seals/cascade/?tag=mcRGO2B9&referer=www.shop.com&format=png&lang=en&seal_number=3&seal_size=m&an=min" alt=""></div>
+</div>
+    </footer>
+</body>
+</html>
+
+
+<script>
+
+var obj = JSON.parse(localStorage.getItem("signindata"));
+             if(obj!=null){
+                 const sign = document.querySelector('#signin');
+                 var x = "Hi"+" "+obj.firstname;
+                 sign.innerHTML= x
+                 sign.style.color="black"
+                 sign.style.backgroundcolor="red"
+             }
+    $(".btn").click(function () {
+      $(this).toggleClass("click");
+      $(".sidebar").toggleClass("show");
+    });
+    $(".feat-btn").click(function () {
+      $("nav ul .feat-show").toggleClass("show");
+      $("nav ul .first").toggleClass("rotate");
+    });
+    $(".serv-btn").click(function () {
+      $("nav ul .serv-show").toggleClass("show1");
+      $("nav ul .second").toggleClass("rotate");
+    });
+
+  var cartArr = JSON.parse(localStorage.getItem("cart"));
+  var price = 0;
+  var n = cartArr.length;
+  cartArr.forEach(function (elem, index) {
+    var count = 1;
+    var card = document.createElement("div");
+
+
+    var image = document.createElement("img");
+    image.setAttribute("src", elem.Images);
+
+    var dname = document.createElement("h4");
+    dname.innerText = elem.Tittle;
+
+    var dprice = document.createElement("p");
+    dprice.innerText = elem.Price;
+
+    var sdprice = document.createElement("p");
+    sdprice.innerText = elem.priceslash;
+
+    var card1 = document.createElement("div");
+    card1.append(dprice, sdprice);
+
+    price = price + (elem.Price)
+
+    var box = document.createElement("div");
+    box.setAttribute("id", "boxId")
+    box.style.display = "flex"
+
+    var quantity = document.createElement("h5");
+    quantity.innerText = "Qty: "
+
+    var quantityValue = document.createElement("h5");
+    quantityValue.innerText = count;
+
+    var quantityIncre = document.createElement("button");
+    quantityIncre.innerText = "Add"
+    quantityIncre.addEventListener("click",function(){
+      addItems(quantityValue,elem)
+    });
+
+    function addItems(ele,elem){
+        count++;
+        quantityValue.innerText = count;
+        price = Number(price) + Number(elem.Price) ;
+        document.querySelector("#totalPrice").innerText = "Price: " + "Rs" + " " + price;
+        n++;
+        document.querySelector("#cartItems").innerText = "Total items: " + n;
+
+    }
+
+    box.append(quantity, quantityValue, quantityIncre);
+
+    var btn = document.createElement("button");
+    btn.innerText = "Remove";
+    btn.addEventListener("click", function () {
+      removeFromCart(elem, index);
+    })
+
+    card.append(image, dname, card1, box, btn);
+    document.querySelector("#container").append(card);
+    document.querySelector("#cartItems").innerText = "Total items: " + cartArr.length;
+    document.querySelector("#totalPrice").innerText = "Price: " + "Rs" + " " + price;
+
+    function removeFromCart(elem, index) {
+      event.target.parentNode.remove();
+      cartArr.splice(index, 1);
+      price = price - (elem.price)
+      document.querySelector("#cartItems").innerText = "Total items: " + cartArr.length;
+      document.querySelector("#totalPrice").innerText = "Price" + "Rs" + " " + price;;
+      localStorage.setItem("cartData", JSON.stringify(cartArr))
+    }
+
+  })
+ var c = 0;
+  document.querySelector("#prBtn").addEventListener("click", applyPromo)
+  function applyPromo() {
+    var code = document.querySelector("#promo").value
+    c++;
+    if (code === "masai30"&&c===1) {
+      price = price * (70 / 100);
+      document.querySelector("#totalPrice").innerText = "Price: " + "Rs" + " " + price;
+    }
+
+  }
+
+  function signupPage() {
+    window.location.href = "signup.html"
+  }
+  function loginPage() {
+    window.location.href = "login.html"
+  }
+  function mensPage() {
+    var token = localStorage.getItem("token");
+    if (token) {
+      window.location.href = "mens.html"
+    }
+    else {
+      alert("Please login to start using our services!");
+      window.location.href = "login.html"
+    }
+  }
+  function womensPage() {
+    var token = localStorage.getItem("token");
+    if (token) {
+      window.location.href = "womens.html"
+    }
+    else {
+      alert("Please login to start using our services!");
+      window.location.href = "login.html"
+    }
+  }
+
+  document.querySelector("#orderBtn").addEventListener("click",function(){
+    window.location.href="payment.html"
+  })
+  function cartPage() {
+    window.location.href="cart.html"
+  }
+  function userPage() {
+    window.location.href="user.html"
+  }
+  var token = localStorage.getItem("token");
+  var user1 = document.querySelector("#bar");
+  if(token){
+    var men = document.createElement("p")
+    men.setAttribute("onclick","mensPage()")
+    men.innerText="Men"
+    var women = document.createElement("p")
+    women.setAttribute("onclick","womensPage()")
+    women.innerText="Women"
+    var user = document.createElement("p")
+    user.setAttribute("onclick","userPage()")
+    user.innerText="User"
+    var cart = document.createElement("p")
+    cart.setAttribute("onclick","cartPage()")
+    cart.innerText="Cart"
+    user1.innerHTML="";
+    user1.append(men,women,user,cart);
+  }
+</script>

@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="sidebar.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="footer.css">
+    <title>Exclusive Brands</title>
+
+    <style>
+        h2,
+        h1,
+        h3 {
+            background-color: transparent;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        h3 {
+            background-color: transparent;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            cursor: pointer;
+
+        }
+
+        .photo {
+            height: 100px;
+            width: 200px;
+            /* border: 1px solid black; */
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: white;
+
+
+            cursor: pointer;
+
+
+        }
+
+        #main_div {
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: space-evenly; */
+            margin-bottom: 20px;
+
+            width: 100%;
+            background-color: #F0F1F7;
+
+        }
+
+        #main_div1 {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            background-color: #F0F1F7;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+
+        }
+
+        .div1 {
+            height: 130px;
+            width: 220px;
+
+            padding: 10px 10px 5px 10px;
+            background-color: #0098b8;
+            margin-bottom: 10px;
+            margin-right: 10px;
+
+
+
+        }
+
+        .div2 {
+            height: 130px;
+            width: 220px;
+
+            padding: 10px 10px 10px 10px;
+            background-color: white;
+            margin-bottom: 10px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            margin-right: 10px;
+        }
+
+        .div3 {
+            height: 130px;
+            width: 220px;
+
+            padding: 10px 10px 10px 10px;
+            background-color: white;
+            margin-bottom: 10px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            margin-right: 10px;
+
+        }
+
+        #special {
+            display: flex;
+            padding-right: 20px;
+            background-color: #F0F1F7;
+            width: 98%;
+        }
+
+        #Container {
+            display: flex;
+            margin-right: 10px;
+            margin-left: 30px;
+
+
+        }
+
+        #container1 {
+            height: 1000px;
+            width: 100%;
+
+            line-height: 15px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+            padding-bottom: 20px;
+            margin-left: 10px;
+            margin-top: 15px;
+        }
+
+        #box1 {
+
+            width: 80%;
+            margin-left: 15px;
+            margin-top: 50px;
+            line-height: 70px;
+        }
+        .drop{
+            line-height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="btn">
+          <span class="fas fa-bars"></span>
+          <i class="fas fa-circle-s"></i>
+        </div>
+    
+        <nav class="sidebar">
+          <div class="logo-img">
+            <img src="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg">
+            <h1>SHOP.COM</h1>
+          </div>
+      
+          <ul class="myaccount">
+            
+            <li><a href="#">Account</a></li>
+            <li>
+              
+              <img src="https://img.shop.com/Image/resources/images/icon-sign-in-24px.svg">
+              <a href="signin.html">Sign In</a>
+            </li>
+            <li><img src="https://img.shop.com/Image/resources/images/icon-track-orders-24px.svg">
+              <a href="#">Track Orders</a>
+            </li>
+            <li><img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg">
+              <a href="#">Reorder Items</a>
+            </li>
+            <li><img src="https://img.shop.com/Image/resources/images/icon-help-outline-24px.svg">
+              <a href="#">Help</a>
+            </li>
+            <li><img src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg">
+              <a href="#">My Account</a>
+            </li>
+          
+          </ul>
+          <ul class="ulcat">
+            
+      
+      <li><a href="clothes.html">Clothes    </a></li>  
+      <li><a href="shoes.html">Shoes      </a></li>
+      <li><a href="#">Beauty    </a></li>  
+      <li><a href="#">Home      </a></li>
+      <li><a href="#">Electronics     </a></li> 
+      <li><a href="#">Health & Nutrition     </a></li> 
+      <li><a href="#">Jewelry      </a></li>
+      <li><a href="#">Kids      </a></li>
+      <li><a href="#">Pet Supplies      </a></li>
+      <li><a href="#">Food & Drink      </a></li>
+      <li><a href="#">Sports     </a></li> 
+      <li><a href="#">Travel     </a></li> 
+      <li><a href="#">SHOP Travel</a></li>
+      <li><a href="#">All Stores</a></li>
+      <li><a href="#">Exclusive Brandschevron </a></li>
+      <li><a href="#">All Departments</a></li>
+          </ul>
+        
+        </nav>
+        <div class="outercontainer">
+          <a class="bannertext">Shopping made easy. Buy now, pay later with Sezzle <span class="bannertext bannertextlink bannertextoverride">See details</span></a>
+      </div>
+      <div class="maincontainer">
+        <div id="first">
+         <div  class="headerlogodesktop"> <a href="home.html"><img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="SHOP.COM"></a> </div>
+        </div>
+        <div  id="second">
+            <div class="search">
+              <div>
+                <div class="ccol">
+                  <select name="" id="sea2">
+                    <option value="">All Departments</option>
+                    <option value="">Auto</option>
+                    <option value="">Baby</option>
+                    <option value="">Beauty</option>
+                    <option value="">Books</option>
+                    <option value="">Business</option>
+                    <option value="">Cameras</option>
+                    <option value="">Clothes</option>
+                    <option value="">Collectible</option>
+                    <option value="">Computers</option>
+                    <option value="">Craft</option>
+                    <option value="">Craft</option>
+                    <option value="">Electronics</option>
+                    <option value="">Food and Drink</option>
+                    <option value="">Electronics</option>
+                    <option value="">Garden</option>
+                  </select>
+                </div>
+                <div class="csea2"><input  id="sea" type="text" class="text" placeholder="Search SHOP.COM..."></div>
+                <div id="csea3"><img src="https://img.shop.com/Image/resources/images/icon-search-24px.svg" alt=""></div>
+              </div>
+              <div id="img"><img src="https://img.shop.com/Image/header2013/motives-usa-can-100110-sculpting-concealer-banners-header1650486339409.svg" alt=""></div>
+            </div>
+            <div class="search1">
+              <div class="links">
+                <div><a href="Exclusive_brands.html">Exclusive Brands</a></div>
+                <div><a href="stores.html">Store</a></div>
+                <div><a href="deals.html">Deals</a></div>
+                <div><a href="">SHOP Travels</a></div>
+                <div><a href="">Departments</a></div>
+                <div><a href="">Shopbuddy</a></div>
+                <div><a href="shoplocal.html">SHOP Local</a></div>
+              </div>
+              <div class="sign">
+                <div class="logo" id="signin"><div><img src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" alt=""></div><a href="signin.html"><div>Sign in</div></a></div>
+                <div class="logo"><div><img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg" alt=""></div><a href=""><div>Orders</div></a></div>
+                <div class="logo"><div><img src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg" alt=""></div><a href="cart.html"><div>Cart</div></a></div>
+              </div>
+            </div>
+        </div>
+      </div>
+    
+       </header>
+    <div id="Container">
+        <div id="container1">
+
+            <details class="drop">
+                <summary>About Us</summary>
+                <uL>
+                    <li>About Us</li>
+                    <li>Corporate History</li>
+                    <li>Exclusive Brands</li>
+                    <li>Executive Team</li>
+                    <li>Careers</li>
+                    <li>In the News</li>
+                </uL>
+            </details >
+                <details class="drop">
+                    <summary>Help</summary>
+                    <uL>
+                        <li>Help</li>
+                        <li>Managing My Account</li>
+                      
+                    </uL>
+                </details>
+                <details class="drop">
+                    <summary>Partner With Us</summary>
+                    <uL>
+                        <li>Partner Information</li>
+                        <li>Marketplace Partner Programs</li>
+                        <li>Inquiry Form</li>
+                        <li>Merchant Login</li>
+                      
+                    </uL>
+                </details>
+                <details class="drop">
+                    <summary>Services</summary>
+                    <uL>
+                        <li>All Services</li>
+                        <li>ShopBuddys</li>
+                        <li>SHOP Local</li>
+                        <li>Hot Deals</li>
+                        <li>SHOPBOX</li>
+                        <li>#SHOPCart</li>
+                        <li>Contests</li>
+                        <li>SHOP.COM Platinum Mastercard®</li>
+                        <li>SHOP.COM Secured Mastercard®</li>
+                        <li>Market America Gear</li>
+                        <li>Get email deals</li>
+                        <li>Service Bundles</li>
+                        <li>Developer Portal</li>
+                        <li>Price Alerts</li>
+                        <li>Shop Business</li>
+                      
+                    </uL>
+                </details>
+
+                <details class="drop">
+                    <summary>Terms & Privacy</summary>
+                    <uL>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Use</li>
+                      
+                    </uL>
+                </details>
+                <details class="drop">
+                    <summary>Shipping Info</summary>
+                   
+                </details>
+           
+            <details class="drop">
+                <summary>Return Policy</summary>
+               
+            </details>
+            <details class="drop">
+                <summary>Contact Us</summary>
+               
+            </details>
+            <details class="drop">
+                <summary>Own Your Own SHOP Site</summary>
+               
+            </details>
+          
+              
+
+
+        </div>
+        <div>
+            <div id="box1">
+                <h1>Our Brand</h1>
+                <h2>Health & Neutrition</h2>
+                <div id="main_div">
+                    <div class="div1"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/isotonix-us-au-gb-hk-sg-logo.svg" />
+                    </div>
+                    <div class="div1"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/prime-usca-hk-logo.svg" /></div>
+                    <div class="div1"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/ultimate-aloe-usca-hk-logo.svg" />
+                    </div>
+                    <div class="div2"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/advanced-level-90-us-logo.svg" />
+                    </div>
+                    <div class="div2"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/bliss-new-us-logo.svg" /></div>
+                    <div class="div2"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/glucosatrin-usca-au-logo.svg" />
+                    </div>
+                    <div class="div1"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/heart-health-logo-trademark-cross.svg" />
+                    </div>
+                    <div class="div1"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/mochatonix-us-logo.svg" /></div>
+                    <div class="div2"><img class="photo" src="https://img.shop.com/Image/Images/11module/MABrands/mpc-us-logo.svg" />
+                    </div>
+                    <div class="div2"><img class="photo" src="https://img.shop.com/Image/Images/11module/MABrands/mpc-us-logo.svg" />
+                    </div>
+                    <div class="div2"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/nutriclean-us-logo.svg" /></div>
+                    <div class="div2"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/vitamind-us-logo.svg" /></div>
+                    <div class="div2"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/isotonix-custom-cocktail-us-logo.svg" />
+                    </div>
+                    <div class="div2"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/nutri-physical-us-logo.svg" />
+                    </div>
+                    <div class="div1"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/curcumin-extreme-usca-hk-sg-logo.svg" />
+                    </div>
+                    <div class="div2"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/awake-us-logo.svg" /></div>
+                    <div class="div2"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/opc3Chews_usa_32979_LogoTreatment_200x75.svg" />
+                    </div>
+                    <div class="div1"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/Probiotics-10.svg" /></div>
+                    <div class="div1"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/thymenol-logo.svg" /></div>
+                    <div class="div1"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/cannabiquin-logo-tm.svg" /></div>
+                    <div class="div1"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/cannabicool-logo-tm.svg" /></div>
+                    <div class="div2"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/pure-collagen-logo.svg" /></div>
+                    <div class="div2"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/vivoquin-logo-trademark.svg" />
+                    </div>
+                    <div class="div2"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/bymygra-logo-trademark.svg" />
+                    </div>
+                    <div class="div2"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/neuro-focus-logo-trademark.svg" />
+                    </div>
+
+
+                </div>
+                <h2>Beauty</h2>
+                <div id="main_div">
+                    <div class="div1"><img
+                            src="https://img.shop.com/Image/Images/11module/MABrands/motives-logo-black.svg" /></div>
+                    <div class="div1"><img
+                            src="https://img.shop.com/Image/Images/11module/MABrands/ldv-usca-au-gb-es-hk-tw-sg-logo.svg" />
+                    </div>
+                    <div class="div2"><img
+                            src="https://img.shop.com/Image/Images/11module/MABrands/fixx-au-tw-logo.svg" /></div>
+                    <div class="div2"><img
+                            src="https://img.shop.com/Image/Images/11module/MABrands/timeless-prescription-usca-mx-tw-logo.svg" />
+                    </div>
+                    <div class="div2"><img
+                            src="https://img.shop.com/Image/Images/11module/MABrands/clearshield-usca-logo.svg" /></div>
+                    <div class="div2"><img
+                            src="https://img.shop.com/Image/Images/11module/MABrands/pentaxyl-usca-au-hk-tw-sg-logo.svg" />
+                    </div>
+                    <div class="div2"><img
+                            src="https://img.shop.com/Image/Images/11module/MABrands/Royal_Spa_logo.svg" /></div>
+                    <div class="div2"><img
+                            src="https://img.shop.com/Image/Images/11module/MABrands/skintelligence-usca-mx-hk-tw-logo.svg" />
+                    </div>
+
+                    <div class="div2"><img
+                            src="https://img.shop.com/Image/Images/11module/MABrands/vitashield-usca-hk-tw-logo.svg" />
+                    </div>
+                    <div class="div2"><img
+                            src="https://img.shop.com/Image/Images/11module/MABrands/cell-labs-usca-au-gb-es-mx-sg-logo.svg" />
+                    </div>
+                    <div class="div1"><img
+                            src="https://img.shop.com/Image/Images/11module/MABrands/ldv-hommes%C2%AE-logo-200x75.svg" />
+                    </div>
+
+                </div>
+                <h2>Jwellery</h2>
+                <div id="main_div1">
+                    <div class="div2"><img class="photo" src="https://img.shop.com/Image/Images/11module/MABrands/layered-logo.svg" />
+                    </div>
+                </div>
+
+
+                <h2>Home</h2>
+                <div id="main_div">
+                    <div class="div2"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/global-care-us-logo.svg" /></div>
+                    <div class="div2"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/pet-health-usca-hk-sg-logo.svg" />
+                    </div>
+                    <div class="div2"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/pure-H2O-usca-hk-tw-logo.svg" />
+                    </div>
+                    <div class="div1"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/snap-usca-sg-mys-logo.svg" /></div>
+                    <div class="div2"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/shopdotcom-us-digital-gift-card.svg" />
+                    </div>
+
+
+                </div>
+
+                <h2>Baby</h2>
+                <div id="main_div1">
+                    <div class="div1"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/dna-miracles-us-ca-au-hk-sg-tw-mrktng-logo-new.svg" />
+                    </div>
+                </div>
+
+                <h2>Weight Management</h2>
+                <div id="main_div1">
+                    <div class="div1"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/tls-us-hk-logo.svg" /></div>
+                </div>
+
+                <h2>Automotive</h2>
+                <div id="special">
+                    <div class="div3"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/autoworks-usca-tw-logo.svg" />
+                    </div>
+                    <div class="div3"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/friction-free-3000-usca-tw-logo.svg" />
+                    </div>
+                </div>
+
+                <h2>Entertainment</h2>
+                <div id="main_div1">
+                    <div class="div2"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/conquer-us-logo.svg" /></div>
+                </div>
+
+                <h2>Electronics</h2>
+                <div id="main_div1">
+                    <div class="div2"><img class="photo"
+                            src="https://img.shop.com/Image/Images/11module/MABrands/stealth-radar-shield-usca-tw-sg-mys-logo.svg" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="main">
+            <div class="firstfoot">
+                <div>
+                   <p>Get Email Deals & Earn Eashback</p>
+                    <div>
+                        <input type="text" name="" id="" placeholder="enter email address...">
+                        <button>Sign Up</button>
+                    </div>
+                </div>
+                <div id="friends">
+                    <span ><u id="lin">Links to this page</u></span>
+                    <span id="tell"><p>and tell of your friends!</p></span>
+                </div>
+            </div>
+            <div class="Secondfoot">
+                <div>
+                    <span>About Us</span>
+                    <span class="vline"></span>
+                    <span>Help</span>
+                    <span class="vline"></span>
+                    <span>Accessibility Statement</span>
+                    <span class="vline"></span>
+                    <span>Contact Us</span>
+                    <span class="vline"></span>
+                    <span>Partner With Us</span>
+                    <span class="vline"></span>
+                    <span>Services</span>
+                    <span class="vline"></span>
+                    <span>Services</span>
+                    <span class="vline"></span>
+                    <span><select name="" id="">
+                        <option value="">Country/Region</option>
+                        <option value="">Malaysia</option>
+                        <option value="">Singapore</option>
+                        <option value="">Hongkong</option>
+                    </select></span>
+                    <span class="vline"></span>
+                    <span><select name="" id="">
+                      <option value="">Connect</option>
+                      <option value="">Facebook</option>
+                      <option value="">Pinterest</option>
+                      <option value="">Twitter</option>
+                  </select></span>
+                  <span class="vline"></span>
+                  <span>Own your own SHOP sites</span>
+                </div>
+                <div id="footlogo">
+                    <div><img class="imgres" src="https://cdn-icons.flaticon.com/png/128/665/premium/665072.png?token=exp=1651801926~hmac=474cbb7b66d5b0c0b9fd394efda11552" alt=""></div>
+                    <div><img class="imgres" src="https://cdn-icons-png.flaticon.com/128/1051/1051309.png" alt=""></div>
+                    <div><img class="imgres" src="https://cdn-icons-png.flaticon.com/128/25/25347.png" alt=""></div>
+                    <div><img class="imgres" src="https://cdn-icons-png.flaticon.com/128/49/49440.png" alt=""></div>
+                </div>
+               
+            </div>
+        <div class="secondmain">
+           <p>© 1997-2022 Market America, Inc. or its affiliates. All other designated trademarks, copyrights, and brands are the property of their respective owners. </p>
+          <p>Only Customers will receive cashback on qualifying purchases. UnFranchise Owners/Shop Consultants will receive increased IBV instead of cashback on qualifying purchases.</p>
+          <u>Privacy Policy</u>
+          <span class="vline col"></span>
+          <u>Term Of Use</u>
+          <span class="vline col"></span>
+          <u>Advertising Disclosure</u>
+          <span class="vline col"></span>
+          <u>Return Policy</u>
+          <span class="vline col"></span>
+          <u>Shipping Information</u>
+        </div>
+    <div class="images">
+        <div class="credimg">
+            <div><img class="imgres" src="https://img.shop.com/Image/images/ir/Shop-ranks-19-in-newsweek-circle.png" alt=""></div>
+            <div><img class="imgres" src="https://img.shop.com/Image/images/ir/DC360_2021_rank_11_top_500_primary_merch_category.png" alt=""></div>
+            <div><img class="imgres" src="https://img.shop.com/Image/images/ir/DC360_2022_rank_55_top_100.png" alt=""></div>
+            <div><img class="imgres" src="https://img.shop.com/Image/images/ir/DC360_2022_rank_80_top_500_and_1000.png" alt=""></div>
+            <div><img class="imgres" src="https://img.shop.com/Image/images/ir/Shop-ranks-15-in-NC-circle.png" alt=""></div>
+            <div><img class="imgres" src="https://img.shop.com/Image/images/ir/commonwealth_2021_rank_25_top_2000_tw.png" alt=""></div>
+            <div><img class="imgres" src="https://img.shop.com/Image/resources/images/torch-tafe2018-badge.png" alt=""></div>
+            <div><img class="imgres" src="https://seal-greensboro.bbb.org/seals/blue-seal-153-100-marketamericashopcom-4002355.png" alt=""></div>
+          </div>
+        </div>
+    </div>
+    <div class="image2">
+        <div><img class="imgres" src="https://seal.digicert.com/seals/cascade/?tag=mcRGO2B9&referer=www.shop.com&format=png&lang=en&seal_number=3&seal_size=m&an=min" alt=""></div>
+    </div>
+        </footer>
+</body>
+
+</html>
+<script>
+    var obj = JSON.parse(localStorage.getItem("signindata"));
+            if(obj!=null){
+                const sign = document.querySelector('#signin');
+                var x = "Hi"+" "+obj.firstname;
+                sign.innerHTML= x
+                sign.style.color="black"
+                sign.style.backgroundcolor="red"
+            }
+   $(".btn").click(function () {
+     $(this).toggleClass("click");
+     $(".sidebar").toggleClass("show");
+   });
+   $(".feat-btn").click(function () {
+     $("nav ul .feat-show").toggleClass("show");
+     $("nav ul .first").toggleClass("rotate");
+   });
+   $(".serv-btn").click(function () {
+     $("nav ul .serv-show").toggleClass("show1");
+     $("nav ul .second").toggleClass("rotate");
+   });
+ 
+ </script>
